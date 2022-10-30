@@ -1,11 +1,8 @@
-section {
-    background-color: red;
+.section__offerings {
+    background-color: yellow;
     padding: 60px 0;
 }
-body {
-    
-    margin: 0 auto;
-}
+
 .offerings__image {
     position: relative;
     margin: 0 auto;
@@ -62,8 +59,11 @@ body {
 
 .offerings__image--tablet-doble {
     display: none;
-    @include tablet {
+
+    @media display and (min-width: $tablet) and (max-width: calc($pc - 1px)) {
+
         display: flex;
         margin-left: 54%;
     }
+
 }
