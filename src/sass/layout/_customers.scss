@@ -1,0 +1,24 @@
+.customers {
+  margin: 0 auto;
+  padding: 60px 20px 60px 20px;
+  margin-bottom: 30px;
+  width: 320px;
+  height: 769px;
+  background-color: #ffffff;
+  background-image: url(/src/images/customers/rectangle.png);
+  background-repeat: no-repeat;
+}
+
+.customers__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.customers__title {
+  margin: 0;
+}
+
+.customers__description {
+  margin: 0;
+}
