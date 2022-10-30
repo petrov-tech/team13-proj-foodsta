@@ -60,10 +60,13 @@
 .offerings__image--tablet-doble {
     display: none;
 
-    @media display and (min-width: $tablet) and (max-width: calc($pc - 1px)) {
+    @include tablet {
 
         display: flex;
         margin-left: 54%;
     }
 
+    @include pc {
+        display: none;
+    }
 }
