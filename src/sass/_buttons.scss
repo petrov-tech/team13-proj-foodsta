@@ -104,3 +104,24 @@
             background-color: #B5FF00;
             }
 }
+
+.burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    min-width: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+        @media (min-width: 768px) {
+            display: none;
+        }
+            &:hover,
+            &:focus {            
+                fill: #FFE550;
+            }
+}
+
