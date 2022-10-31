@@ -13,7 +13,7 @@
     width: 320px;
     height: 449px;
     position: absolute;
-    padding: 40px;
+    padding: 20px;
     top: 50%;
     left: 50%;
     background: #FFE550;
@@ -25,11 +25,13 @@
     &__title {
         text-align: center;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        letter-spacing: 0.03em;
-        color: var(--second-black-color);
-        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 1.21;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        // letter-spacing: 0.03em;
+        // color: var(--second-black-color);
+        
     }
 
     &__form-element {
@@ -38,10 +40,27 @@
         margin-bottom: 10px;
        
     }
+    &__form-label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1,38;
+        margin-left: 12px;
+    }
 
     &__input-modal {
         position: relative;
-        margin-top: 4px;
+        margin-top: 2px;
+        width: 280px;
+        height: 48px;
+        padding-left: 12px;
+        background: #FFFFFF;
+        border: 1px solid #7EB101;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 1.25;
+       
+        
     }
 
     &__form {
@@ -56,26 +75,33 @@
     }
 
     &__submit-btn {
-        border: none;
-        width: 200px;
-        height: 50px;
-        margin-top: 30px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.54;
+        color: #2C2C2C;
+        // border: none;
+        width: 106px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 2px solid #7EB101;
+        border-radius: 30px;
+        margin-top: 32px;
         margin-left: auto;
         margin-right: auto;
-        color: var(--brand-color);
-        background-color: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.9;
-        letter-spacing: 0.06em;
+        // color: var(--brand-color);
+        // background-color: var(--accent-color);
+        // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        // border-radius: 4px;
+        // font-weight: 700;
+        // font-size: 16px;
+        // line-height: 1.9;
+        // letter-spacing: 0.06em;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        transition: background-color var(--time-cubic-bezier);
+        // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        // transition: background-color var(--time-cubic-bezier);
 
         &:focus {
             background: var(--active-color);
@@ -88,6 +114,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
+        
     }
 
     &__textarea-label {
@@ -109,14 +136,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 16px;
+    right: 16px;
     border-radius: 50%;
-    background: var(--brand-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    border: none;
     cursor: pointer;
     transition: fill var(--time-cubic-bezier);
 
@@ -136,16 +163,16 @@
     left: 12px;
 }
 
-.modal__form-element input {
-    height: 40px;
-    border: 1px solid var(--modal-no-focus-color);
-    border-radius: 4px;
-    padding-left: 42px;
-    width: 100%;
-    outline: none;
-    cursor: pointer;
-    transition: border-color var(--time-cubic-bezier);
-}
+// .modal__form-element input {
+//     height: 40px;
+//     border: 1px solid var(--modal-no-focus-color);
+//     border-radius: 4px;
+//     padding-left: 42px;
+//     width: 100%;
+//     outline: none;
+//     cursor: pointer;
+//     transition: border-color var(--time-cubic-bezier);
+// }
 
 .modal__form-element input:focus {
     border: 1px solid var(--accent-color);
@@ -165,26 +192,3 @@
     border-radius: 4px;
 }
 
-textarea {
-    width: 448px;
-    height: 120px;
-    border: 1px solid var(--modal-no-focus-color);
-    border-radius: 4px;
-    resize: none;
-    padding: 12px 16px;
-    cursor: pointer;
-    outline: none;
-    color: var(--backgroun-footer-color);
-    transition: border-color var(--time-cubic-bezier);
-
-    &:focus {
-        border: 1px solid var(--accent-color);
-    }
-
-    &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-        color: var(--textarea-text-color);
-    }
-}
