@@ -1,10 +1,50 @@
-<header class="container">
-    <a href="" class="logo"></a>
-    <ul>
-        <li>розділ 1</li>
-        <li>розділ 2</li>
-        <li>розділ 3</li>
-        <li>розділ 4</li>
-        <li>розділ 5</li>
-    </ul>
+<header class="header">
+    <div class="container">
+        <nav class="navigation">
+            <a class="logo logo-header" href="./index.html">
+                <picture>
+                    <source srcset="
+                    ./images/header/logo-desk-1x.png 1x,
+                    ./images/header/logo-desk-2x.png 2x"
+    
+                    media="(min-width: 1280px)"/> 
+    
+                    <source srcset="
+                    ./images/header/logo-tab-1x.png 1x,
+                    ./images/header/logo-tab-2x.png 2x"
+    
+                    media="(min-width: 768px)"/>
+    
+                    <source
+                    srcset="
+                    ./images/header/logo-mob-1x.png 1x,
+                    ./images/header/logo-mob-2x.png 2x"
+                    
+                    media="(max-width: 767px)"/>     
+    
+                    <img src="images/header/logo-desk-1x.png" alt="Логотип FoodSta" width="66px"/>
+                </picture>
+            </a>
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                  <a class="navigation_link navigation_link--current" href="./index.html">Hero</a>
+                </li>
+                <li class="navigation_item">
+                  <a class="navigation_link" href="#">Offerings</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Favorites</a>
+                  </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Customers Say</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Subscribe</a>
+                </li>
+            </ul>
+            <button type="button" class="hero__buttonOpenModal" data-modal-open>
+                Order Now
+            </button>
+        </nav>    
+    </div>
 </header>
