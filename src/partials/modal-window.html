@@ -1,0 +1,83 @@
+<div class="buttonOpenModal">
+  <button type="button" class="hero__buttonOpenModal" data-modal-open>
+    Order Now
+  </button>
+</div>
+
+<div class="buttonOpenModal">
+  <button type="button" class="hero__buttonOpenModal" data-modal-open>
+    Order Now
+  </button>
+</div>
+
+<div class="buttonOpenModal">
+  <button type="button" class="hero__buttonOpenModal" data-modal-open>
+    Order Now
+  </button>
+</div>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <p class="modal__title">Order Form</p>
+
+    <form class="modal__form">
+      <div class="modal__form-element">
+        <label class="modal__form-field" for="username"
+          ><span class="modal__form-label">Name</span>
+          <input
+            class="modal__input-modal"
+            type="text"
+            name="username"
+            id="username"
+            required
+            placeholder="Your name"
+          />
+          <!-- <svg class="icon-person-black-18dp-1" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+              </svg> -->
+        </label>
+      </div>
+
+
+      <div class="modal__form-element">
+        <label class="modal__form-field" for="phone_number"
+          ><span class="modal__form-label">Phone number</span>
+          <input
+            class="modal__input-modal"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+            placeholder="+38(0_ _)_ _ _  _ _  _ _"
+          />
+          <!-- <svg class="icon-phone-black-18dp-1" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+              </svg> -->
+        </label>
+      </div>
+
+
+      <div class="modal__form-element">
+        <label class="modal__form-field" for="email"
+          ><span class="modal__form-label">E-mail</span>
+          <input
+            class="modal__input-modal"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+
+          <!-- <svg class="icon-email-black-18dp-1" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+              </svg> -->
+        </label>
+      </div>
+    </form>
+     <button type="button" data-modal-close class="modal__close-button">
+          <!-- <svg class="icon-close-black-18dp" width="30px" height="30px">
+            <use href="./images/sprite.svg#icon-close-black-18dp"></use>
+          </svg> -->
+        </button>
+  </div>
+</div>

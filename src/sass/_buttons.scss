@@ -1,0 +1,127 @@
+
+.header__button {
+    display: none;
+
+    @mixin pc {
+        width: 98px;
+        height: 32px;
+        color: #2C2C2C;
+        background-color: #BBF330;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        margin-left: 30px;            
+    } 
+        &:hover,
+        &:focus {
+            background-color: #FFFFFF;
+            border: 2px solid #597D00;
+        }
+}
+
+.hero__button {
+    width: 98px;
+    height: 32px;
+    color: #2C2C2C;
+    background-color: #BBF330;
+    border-radius: 30px;
+    margin-top: 28px;        
+        @mixin pc {
+            margin-top: 40px;
+        }
+        &:hover,
+        &:focus {
+            background-color: #FFFFFF;
+            border: 2px solid #597D00;
+            }
+}
+
+
+
+.offerings__button {
+    width: 106px;
+    height: 40px;
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border: 2px solid #7EB101;    
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 28px; 
+    margin-left: 20px;
+    margin-right: 24px; 
+        @mixin tablet {
+            margin-top: 40px; 
+            margin-left: 32px;            
+        }
+        @mixin pc {
+            margin-top: 32px;
+            margin-left: 90px;
+        }
+        &:hover,
+        &:focus {            
+            border: #597D00;
+            }
+}
+
+.subscribe__button {
+    width: 103px;
+    height: 42px;
+    color: #2C2C2C;    
+    background-color: #BBF330;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px; 
+    margin-left: 197px;     
+        @mixin tablet {
+            margin-top: 24px; 
+            margin-left: 22px;            
+        }
+        @mixin pc {            
+            margin-left: 32px;
+        }
+        &:hover,
+        &:focus {            
+            background-color: #FFE550;
+            }
+}
+
+.footer__button {
+    width: 103px;
+    height: 42px;
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border: 0.854167px solid #7EB101;    
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px; 
+    margin-left: 197px;    
+        @mixin pc {
+            margin-top: 32px;
+            margin-left: 13px;
+        }
+        &:hover,
+        &:focus {            
+            background-color: #B5FF00;
+            }
+}
+
+.burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    min-width: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+        @media (min-width: 768px) {
+            display: none;
+        }
+            &:hover,
+            &:focus {            
+                fill: #FFE550;
+            }
+}
+
