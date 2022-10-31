@@ -59,7 +59,7 @@
 
 .offerings__image--tablet-doble {
     display: none;
-
+    
     @include tablet {
 
         display: flex;
@@ -68,5 +68,29 @@
 
     @include pc {
         display: none;
+    }
+}
+.offerings__room {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.offerings__link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 0;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+
+    &:hover {
+        fill: #7EB101;
+    }
+    &:active {
+        fill: black;
     }
 }
