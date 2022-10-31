@@ -1,13 +1,49 @@
-<footer class="#">
-    <div class="container">
-    <a class="logo" href="#">logo</a>
-    <ul class="footer__list">
-        <li class="footer__item">Home</li>
-        <li class="footer__item">About</li>
-        <li class="footer__item">Service</li>
-        <li class="footer__item">Menu</li>
-        <li class="footer__item">Contact</li>
+<footer class="footer conteiner">
+    <div class="#">
+    <a class="logo__footer" href="./index.html">
+        <picture>
+            <source srcset="
+            ./images/header/logo-desk-1x.png 1x,
+            ./images/header/logo-desk-2x.png 2x"
+
+            media="(min-width: 1280px)"/> 
+
+            <source srcset="
+            ./images/header/logo-tab-1x.png 1x,
+            ./images/header/logo-tab-2x.png 2x"
+
+            media="(min-width: 768px)"/>
+
+            <source
+            srcset="
+            ./images/header/logo-mob-1x.png 1x,
+            ./images/header/logo-mob-2x.png 2x"
+            
+            media="(max-width: 767px)"/>     
+
+            <img src="images/header/logo-desk-1x.png" 
+            alt="Логотип FoodSta" />
+        </picture>
+    </a>
+
+    <ul class="footer__list">  
+        <li class="footer__item">  
+          <a class="footer__link" href="#hero">Hero</a>  
+        </li>  
+        <li class="footer__item">  
+          <a class="footer__link" href="#offerings">Offerings</a>  
+        </li>  
+        <li class="footer__item">  
+            <a class="footer__link" href="#favorites">Favorites</a>  
+          </li>  
+        <li class="footer__item">  
+            <a class="footer__link" href="#customers">Customers Say</a>  
+        </li>  
+        <li class="footer__item">  
+            <a class="footer__link" href="#subscribe">Subscribe</a>  
+        </li>  
     </ul>
+
     <p class="footer__title">Subscribe</p>
     <form class="footer__from">
     <input class="footer__input" type="text" name="email" id="email"

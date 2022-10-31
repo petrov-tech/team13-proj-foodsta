@@ -1,3 +1,20 @@
+.container {
+    width: 1280px;
+    padding: 60px 0;
+    @media pc {
+        padding: 100px 0;
+    }
+}
+
+.logo__footer {
+    width: 69px;
+
+    @mixin pc {
+        width: 66px;
+    }
+}
+
+
 .footer__item {
     font-style: normal;
     font-weight: 400;
@@ -14,15 +31,22 @@
     line-height: 10.71;
 
     color: #2C2C2C;
-
 }
+
 .footer__input {
+    width: 279px;
+    height: 42px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12.5;
 
     color: #505050;
+
+    background: #FEFEFE;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
 }
 .footer__button {
     font-style: normal;
@@ -41,10 +65,10 @@
 
     color: #2C2C2C;
 
-    // @mixin tablet {
-    //     font-size: 12px;
-    //     line-height: 1.166;
-    // }
+    @mixin tablet {
+        font-size: 12px;
+        line-height: 1.166;
+    }
 }
 
 .footer__discriotio__item {
@@ -62,9 +86,9 @@
 
     color: #7EB101;
 
-    // @mixin tablet {
-    //     font-size: 12px;
-    //     line-height: 1.166;
-    // }
+    @mixin tablet {
+        font-size: 12px;
+        line-height: 1.166;
+    }
 
 }
