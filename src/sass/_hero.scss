@@ -34,10 +34,23 @@
 
 // .hero__slider {
 //     position: relative;
-//     width: 580px;
-//     height: 580px;
-//     border: 26px solid yellow;
 //     border-radius: 50%;
+
+//     @media screen and (min-width:768px) {
+//         width: 320px;
+//             height: 320px;
+//             border: 14px solid yellow;
+//     }
+
+//     @media screen and (min-width:1280px) {
+//         width: 580px;
+//             height: 580px;
+//             border: 26px solid yellow;
+//     }
+
+//     @mixin mobile {
+//         display: none;
+//     }
 // }
 
 // .hero__img {
@@ -60,6 +73,16 @@
 //     background-color: #fefefe;
 //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
+//     @mixin tablet {
+//             width: 34px;
+//             height: 28px;
+//         }
+
+//     @mixin pc {
+//         width: 48px;
+//             height: 40px;
+//     }
+
 //     &:hover,
 //     &:focus {
 //         fill: #7EB101;
@@ -81,6 +104,16 @@
 //     border-radius: 8px;
 //     background-color: #fefefe;
 //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+//         @mixin tablet {
+//                 width: 34px;
+//                 height: 28px;
+//             }
+        
+//             @mixin pc {
+//                 width: 48px;
+//                 height: 40px;
+//             }
     
 //     &:hover,
 //         &:focus {
@@ -88,3 +121,15 @@
 //             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 //         }
 // }
+
+// // .hero_svg {
+// //     @mixin pc {
+// //         width: 11px;
+// //             height: 20px;
+// //     }
+
+// //     @mixin tablet {
+// //         width: 17px;
+// //         height: 29px;
+// //     }
+// // }

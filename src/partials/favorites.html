@@ -3,8 +3,17 @@
     <p class="favorites__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <ul class="favorites__list">
         <li class="favorites__item">
-            <img class="favorites__img" src="/src/images/favorites/pc/gamburger-pc-1.png" alt="gamburger" />
-        </li>
+            <picture>
+                <source srcset="/src/images/favorites/mob/gamburger-mob-1.png 1x, /src/images/favorites/mob/gamburger-mob-2.png 2x"
+                    media="(max-width: 767px)" />
+                <source srcset="/src/images/favorites/tablet/gamburger-tab-1.png 1x, /src/images/favorites/tablet/gamburger-tab-2.png 2x"
+                    media="(max-width: 1279px)" />
+                <source srcset="/src/images/favorites/pc/gamburger-pc-1.png 1x, /src/images/favorites/pc/gamburger-pc-2.png 2x"
+                    media="(min-width: 1280px)" />
+                <img class="favorites__img" src="/src/images/favorites/pc/gamburger-pc-1.png" alt="gamburger" />
+            </picture>
+            
+        <!-- </li>
         <li class="favorites__item">
             <img class="favorites__img" src="/src/images/favorites/pc/pasta-pc-1.png" alt="pasta" />
         </li>
@@ -19,5 +28,5 @@
         </li>
         <li class="favorites__item">
             <img class="favorites__img" src="/src/images/favorites/pc/borshch-pc-1.png" alt="borshch" />
-        </li>
+        </li> -->
 </section>
