@@ -11,18 +11,20 @@
     background-size: auto auto;
     padding: 0;
     padding-top: 18.55%;    
-    
+    margin: 0 auto;
     
     @include mobile {
-        
+        width: $mobile;
         padding-top: 90px;
     }
     @include tablet {
         background: url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
-        padding-top: 115px;        
+        padding-top: 115px;
+        width: $tablet;
     }
     @include pc {        
         padding-top: 190px;
+        width: $pc;
     }    
 }
 .offerings__warps {
