@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modall-open]"),
-    closeModalBtn: document.querySelector("[data-modall-close]"),
-      modal: document.querySelector("[data-modall]"),
+    openModalBtn: document.querySelector("[data-burger-open]"),
+    closeModalBtn: document.querySelector("[data-burger-close]"),
+      modal: document.querySelector("[data-burger]"),
       body: document.querySelector("body"),
   };
 
@@ -10,7 +10,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
+      refs.modal.classList.toggle("burger_menu-is-hidden");
       refs.body.classList.toggle("no-scroll");
   }
 })();

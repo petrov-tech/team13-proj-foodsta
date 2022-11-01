@@ -39,7 +39,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .burger_menu-conteiner {
     display: none;
   }
@@ -57,7 +57,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
+.burger_menu-is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -93,7 +93,7 @@ ul {
   color: #000000;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .burger_menu-box {
     display: none;
   }
