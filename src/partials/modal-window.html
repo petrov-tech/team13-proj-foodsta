@@ -1,21 +1,3 @@
-<div class="buttonOpenModal">
-  <button type="button" class="hero__buttonOpenModal" data-modal-open>
-    Order Now
-  </button>
-</div>
-
-<div class="buttonOpenModal">
-  <button type="button" class="hero__buttonOpenModal" data-modal-open>
-    Order Now
-  </button>
-</div>
-
-<div class="buttonOpenModal">
-  <button type="button" class="hero__buttonOpenModal" data-modal-open>
-    Order Now
-  </button>
-</div>
-
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <p class="modal__title">Order Form</p>
@@ -38,7 +20,6 @@
         </label>
       </div>
 
-
       <div class="modal__form-element">
         <label class="modal__form-field" for="phone_number"
           ><span class="modal__form-label">Phone number</span>
@@ -56,7 +37,6 @@
         </label>
       </div>
 
-
       <div class="modal__form-element">
         <label class="modal__form-field" for="email"
           ><span class="modal__form-label">E-mail</span>
@@ -73,11 +53,12 @@
               </svg> -->
         </label>
       </div>
+      <button type="submit" class="modal__submit-btn">Send</button>
     </form>
-     <button type="button" data-modal-close class="modal__close-button">
-          <!-- <svg class="icon-close-black-18dp" width="30px" height="30px">
-            <use href="./images/sprite.svg#icon-close-black-18dp"></use>
-          </svg> -->
-        </button>
+    <button type="button" data-modal-close class="modal__close-button">
+      <svg class="icon-cross" width="24px" height="24px">
+        <use href="./images/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
   </div>
 </div>
