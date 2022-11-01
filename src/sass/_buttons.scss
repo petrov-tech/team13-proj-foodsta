@@ -14,8 +14,7 @@
     } 
         &:hover,
         &:focus {
-            background-color: #FFFFFF;
-            border: 2px solid #597D00;
+            background-color: #B5FF00;            
         }
 }
 
@@ -25,14 +24,14 @@
     color: #2C2C2C;
     background-color: #BBF330;
     border-radius: 30px;
+    border: none;
     margin-top: 28px;        
         @mixin pc {
             margin-top: 40px;
         }
         &:hover,
         &:focus {
-            background-color: #FFFFFF;
-            border: 2px solid #597D00;
+            background-color: #B5FF00;            
             }
 }
 
@@ -59,7 +58,7 @@
         }
         &:hover,
         &:focus {            
-            border: #597D00;
+            border: 2px solid #597D00;
             }
 }
 
@@ -69,6 +68,7 @@
     color: #2C2C2C;    
     background-color: #BBF330;
     border-radius: 30px;
+    border: none;
     cursor: pointer;
     margin-top: 20px; 
     margin-left: 197px;     
@@ -81,7 +81,7 @@
         }
         &:hover,
         &:focus {            
-            background-color: #FFE550;
+            background-color: #B5FF00;
             }
 }
 
@@ -91,7 +91,7 @@
     color: #2C2C2C;
     background-color: #FFFFFF;
     border: 0.854167px solid #7EB101;    
-    border-radius: 30px;
+    border-radius: 30px;    
     cursor: pointer;
     margin-top: 20px; 
     margin-left: 197px;    
@@ -101,7 +101,7 @@
         }
         &:hover,
         &:focus {            
-            background-color: #B5FF00;
+            background-color: #FFE550;
             }
 }
 
