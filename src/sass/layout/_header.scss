@@ -1,66 +1,16 @@
-body {
-    background-color: #FEFEFE;
-    color: #2C2C2C;
-    font-family: "Roboto", sans-serif;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-a {
-    text-decoration-line: none;
-}
-
-// img {
-//     width: 100%;
-//     display: block;
-// }
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }    
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    } 
-
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-    } 
-}
-
-
 .header {
+    position: fixed;  
+    top: 0;  
+    z-index: 100;  
+    width: 100%;
+    background: #FEFEFE;  
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
 
-    // &__container {
-
-    //     // @media screen and (max-width:480px) {
-    //     //     display: flex;
-    //     //     align-items: center;
-            
-            
-    //     // }
-
-        
-    //     // @media screen and (min-width:1280px) {
-    //     //     display: flex;
-    //     //     align-items: center;
-            
-            
-            
-    //     // }
-        
-    // }
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 
     &__wrap {
 
@@ -72,45 +22,22 @@ a {
             display: flex;
             align-items: center;
         }
-        
     }
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    
-}
-
-
-
-.logo {
-    position: relative;
-
-}
-
 .logo-header {
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .navigation_list {
-  
+    display: none;
     
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
     @media screen and (min-width:768px) {
         display: flex;
-        
-    }
-
-    @media screen and (min-width:1280px) {
-       gap: 28px;
-    }
-    
+        gap: 28px;
+    } 
 }
 
 .navigation_link {
@@ -124,8 +51,16 @@ a {
     font-weight: 400;
     line-height: 1.14;
     color: #2C2C2C;
+
+    text-decoration-line: none;
+
+    &:hover,
+    &:focus {
+        text-decoration-line: underline;
+        color: #BBF330;
+    }
 }
 
-button {
+.header__button {
     margin-left: 30px;
 }
