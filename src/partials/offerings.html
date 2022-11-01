@@ -1,4 +1,4 @@
-<section class="section section__offerings">
+<section class="section section__offerings" id="offerings">
   <div class="container">
     <div class="offerings__image">
       <picture class="offerings__image--shadow">
@@ -30,7 +30,7 @@
         />
       </picture>
     </div>
-    <div class="offerings__image--tablet-doble">
+    <div class="offerings__image--tablet-double">
       <img src="./images/offerings/aple-t.png" alt="apple" />
       <img src="./images/offerings/aple-t.png" alt="apple" />
     </div>
@@ -40,15 +40,15 @@
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
-    <ul class="offerings__item">
-      <li class="offerings__list">
+    <ul class="offerings__list list">
+      <li class="offerings__item">
         <h3 class="offerings__title">Fasest Delivery</h3>
         <p class="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros.
         </p>
       </li>
-      <li class="offerings__list">
+      <li class="offerings__item">
         <h3 class="offerings__title">Easy to order</h3>
         <p class="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -56,7 +56,14 @@
         </p>
       </li>
     </ul>
-    <button type="button">Order Now</button>
-    <button type="button">Read More</button>
+    <div class="offerings__room">
+      <button class="offerings__button" type="button">Order Now</button>
+      <a class="offerings__link link" href="#"
+        >Read More
+        <svg width="13" height="13">
+          <use href="./images/symbol-defs.svg#icon-vector-right"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>

@@ -8,8 +8,15 @@
         color: #2C2C2C;
         background-color: #BBF330;
         border-radius: 30px;
-        margin-left: 30px;
-    }    
+        border: none;
+        cursor: pointer;
+        margin-left: 30px;            
+    } 
+        &:hover,
+        &:focus {
+            background-color: #FFFFFF;
+            border: 2px solid #597D00;
+        }
 }
 
 .hero__button {
@@ -22,6 +29,11 @@
         @mixin pc {
             margin-top: 40px;
         }
+        &:hover,
+        &:focus {
+            background-color: #FFFFFF;
+            border: 2px solid #597D00;
+            }
 }
 
 
@@ -33,9 +45,12 @@
     background-color: #FFFFFF;
     border: 2px solid #7EB101;    
     border-radius: 30px;
+
+    cursor: pointer;
     margin-top: 28px; 
     margin-left: 20px;
-    margin-right: 24px; 
+    margin-right: 24px;
+
         @mixin tablet {
             margin-top: 40px; 
             margin-left: 32px;            
@@ -44,6 +59,10 @@
             margin-top: 32px;
             margin-left: 90px;
         }
+        &:hover,
+        &:focus {            
+            border: #597D00;
+            }
 }
 
 .subscribe__button {
@@ -52,6 +71,7 @@
     color: #2C2C2C;    
     background-color: #BBF330;
     border-radius: 30px;
+    cursor: pointer;
     margin-top: 20px; 
     margin-left: 197px;     
         @mixin tablet {
@@ -61,6 +81,10 @@
         @mixin pc {            
             margin-left: 32px;
         }
+        &:hover,
+        &:focus {            
+            background-color: #FFE550;
+            }
 }
 
 .footer__button {
@@ -70,10 +94,36 @@
     background-color: #FFFFFF;
     border: 0.854167px solid #7EB101;    
     border-radius: 30px;
+    cursor: pointer;
     margin-top: 20px; 
     margin-left: 197px;    
         @mixin pc {
             margin-top: 32px;
             margin-left: 13px;
         }
+        &:hover,
+        &:focus {            
+            background-color: #B5FF00;
+            }
 }
+
+.burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    min-width: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+        @media (min-width: 768px) {
+            display: none;
+        }
+            &:hover,
+            &:focus {            
+                fill: #FFE550;
+            }
+}
+
