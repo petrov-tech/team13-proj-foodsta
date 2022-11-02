@@ -80,23 +80,23 @@
 }
 
 .footer__button {
-  width: 103px;
-  height: 42px;
-  color: #2c2c2c;
-  background-color: #ffffff;
-  border: 0.854167px solid #7eb101;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 197px;
-  @mixin pc {
-    margin-top: 32px;
-    margin-left: 13px;
-  }
-  &:hover,
-  &:focus {
-    background-color: #b5ff00;
-  }
+    width: 103px;
+    height: 42px;
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border: 0.854167px solid #7EB101;    
+    border-radius: 30px;
+    cursor: pointer;
+    // margin-top: 20px; 
+    // margin-left: 197px;    
+        // @mixin pc {
+        //     margin-top: 32px;
+        //     margin-left: 13px;
+        // }
+        &:hover,
+        &:focus {            
+            background-color: #B5FF00;
+            }
 }
 
 .burger_menu {
