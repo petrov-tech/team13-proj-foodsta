@@ -9,23 +9,84 @@
       </p>
       <button class="hero__button" type="submit">Order now</button>
     </div>
-    <div class="hero__slider">
-      <img
-        srcset="
-          ./images/hero/pc/foto1@1x.png  528w,
-          ./images/hero/pc/foto1@2x.png 1056w
-        "
-        src="./images/hero/pc/foto1@1x.png"
-        alt="meatball"
-        class="hero__img"
-        sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
-      />
-      <button class="hero__slider_btn">
+    <div class="hero__slider" data-carousel>
+      <ul class="hero__slider-list" data-slides>
+        <li class="hero__slider-item" data-active>
+          <picture>
+            <source
+              srcset="
+                ./images/hero/pc/foto1@1x.png 1x,
+                ./images/hero/pc/foto1@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/tablet/foto1@1x.png 1x,
+                ./images/hero/tablet/foto1@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="hero__img"
+              src="./images/hero/pc/foto1@1x.png"
+              alt="Falafel with humus"
+            />
+          </picture>
+        </li>
+        <li class="hero__slider-item">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/pc/foto2@1x.png 1x,
+                ./images/hero/pc/foto2@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/tablet/foto2@1x.png 1x,
+                ./images/hero/tablet/foto2@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="hero__img"
+              src="./images/hero/pc/foto2@1x.png"
+              alt="Greek salad"
+            />
+          </picture>
+        </li>
+        <li class="hero__slider-item">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/pc/foto3@1x.png 1x,
+                ./images/hero/pc/foto3@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/tablet/foto3@1x.png 1x,
+                ./images/hero/tablet/foto3@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="hero__img"
+              src="./images/hero/pc/foto3@1x.png"
+              alt="Pashot egg with vegetables and avocado"
+            />
+          </picture>
+        </li>
+      </ul>
+      <button class="hero__slider_btn" data-carousel-button="prev">
         <svg class="hero__svg" width="17" height="29">
           <use href="./images/symbol-defs.svg#icon-vector-left"></use>
         </svg>
       </button>
-      <button class="hero__slider_btn-right">
+      <button class="hero__slider_btn-right" data-carousel-button="next">
         <svg class="hero__svg" width="17" height="29">
           <use href="./images/symbol-defs.svg#icon-vector-right"></use>
         </svg>
