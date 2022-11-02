@@ -1,69 +1,100 @@
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-    padding-left: 0;
-    margin: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
+.burger_menu-box {
+  position: fixed;
+  right: 20px;
+  top: 22px;
+}
 .burger_menu {
-    border: none;
-    outline: none;
-    background-color: #FEFEFE;
+  border: none;
+  outline: none;
+  background-color:rgba(0, 0, 0, 0);
+  display: block;
+  cursor: pointer;
+  fill: #7eb101;
+}
+
+.burger_menu:active {
+  fill: #ffe550;
+  
 }
 
 .burger_menu-conteiner {
-    position: absolute;
-    width: 130px;
-    height: 255px;
-    left: 170px;
-    top: 50px;
-    background: #ddd;
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    border-radius: 30px 0px 30px 30px;
+  width: 130px;
+  height: 255px;
+  background:#FEFEFE;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+@media screen and (min-width: 768px) {
+  .burger_menu-conteiner {
+    display: none;
+  }
 }
 
 .burger_menu-cross {
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    border: none;
-    outline: none;
-    background-color: #ddd;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.burger_menu-is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .burger_menu-item {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
 }
 
 .burger_menu-item:active {
-    background: #BBF330;
-
-
+  background: #bbf330;
 }
 
 .burger_menu-item:first-child:active {
-    background: #BBF330;
-    border-radius: 30px 0px 0px 0px;
+  background: #bbf330;
+  border-radius: 30px 0px 0px 0px;
 }
 
 .burger_menu-item:last-child:active {
-    background: #BBF330;
-    border-radius: 0px 0px 30px 30px;
+  background: #bbf330;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .burger_menu-text {
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19px;
-    color: #000000;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19px;
+  color: #000000;
+}
 
+@media screen and (min-width: 768px) {
+  .burger_menu-box {
+    display: none;
+  }
 }

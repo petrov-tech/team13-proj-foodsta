@@ -1,72 +1,136 @@
-.section__offerings {
-    background-color: yellow;
-    padding: 60px 0;
+.section__offerings {  
+         
+   
+    @include tablet {        
+        margin-top: -212px;
+    }
+    
 }
-
-.offerings__image {
-    position: relative;
+.container__offerings {
+    background:   url(../images/offerings/offerings-bg.svg) 50% 0px no-repeat;    
+    background-size: auto auto;
+    padding: 0;
+    padding-top: 18.55%;    
     margin: 0 auto;
-    width: 255px;
-    height: 255px;
-           
-    border-radius: 50%;
-    background-color: #FEFEFE;
-
-    &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 110%;
-            height: 110%;
-            top: 50%;
-            left: 50%;
-            translate: -50% -50%;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
+    
+    @include mobile {
+        width: $mobile;
+        padding-top: 90px;
     }
-
-    &--shadow::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 50%;
-        height: 17%;
-        bottom: 0;
-        left: 50%;
-        translate: -50% -50%;
-        background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-        filter: blur(6.61818px);
-    }
-
     @include tablet {
-        width: 325px;
-        height: 325px;
-        margin: 0;
+        background: url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        padding-top: 115px;
+        width: $tablet;
+    }
+    @include pc {        
+        padding-top: 190px;
+        width: $pc;
+    }    
+}
+.offerings__warps {
+    background-color: #FFE550;
+    padding-bottom: 60px;
+    @include tablet {
+        padding-bottom: 100px;
     }
     @include pc {
-        width: 502px;
-        height: 502px;
-    }
-}
-
-.offerings__icon {
-    position: absolute;
-    bottom: 16%;
-    left: 50%;
-    translate: -50%;
-    display: block;       
-}
-
-.offerings__image--tablet-doble {
-    display: none;
-
-    @include tablet {
-
         display: flex;
-        margin-left: 54%;
+        align-items: center;
+        padding-bottom: 43px;
+        gap: 90px;
+    }
+}
+.offerings__image {
+   margin-bottom: 60px;
+    @include pc {
+        margin-bottom: 0;
+    }
+}
+.offerings__info {
+    @include pc {
+        width: 573px;
+    }
+    
+}
+.offerings__icon {
+    display: block;       
+    margin: 0 auto;
+    
+}
+.offerings__title {
+    margin-bottom: 28px;
+}
+.offerings__paragraph {
+    margin-bottom: 28px;
+}
+.advantages {
+    &__list {
+        margin-bottom: 28px;
+
+        @include tablet {
+            display: flex;
+        }
     }
 
-    @include pc {
-        display: none;
+    &__item {
+        &:first-child {
+            margin-bottom: 28px;
+
+            @include tablet {
+                margin-right: 116px;
+            }
+            
+        }
+        &:first-child::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 48px;
+            background: white url(../images/offerings/rocket.svg) 50% 50% no-repeat;
+            border-radius: 50%;
+        }
+
+        &:last-child::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 48px;
+            background: white url(../images/offerings/touch.svg) 50% 50% no-repeat;
+            border-radius: 50%;
+        }
+        @include tablet {
+            width: 252px;
+        }
+    }
+    &__title {
+        margin-top:8px ;
+        margin-bottom: 16px;
+
+    }
+}
+
+
+.offerings__room {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.offerings__link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+
+    &:hover {
+        fill: #7EB101;
+    }
+    &:active {
+        fill: black;
     }
 }
