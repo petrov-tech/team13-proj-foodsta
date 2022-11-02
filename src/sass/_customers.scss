@@ -6,9 +6,17 @@ img {
   margin-bottom: 0px;
   height: 769px;
 
-  background-image: url(../images/customers/mobile/background-mob-320-1x.png);
+  background-image: url(../images/customers/mobile/background-mob-1x.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media screen and(min-width:768px) {
+    background-image: url(../images/customers/tablet/backgound-tab-x1.png);
+  }
+
+  @media screen and(min-width:1280px) {
+    background-image: url(../images/customers/desktop/background-desk-x1.png);
+  }
 }
 
 .customers__cards {
@@ -18,10 +26,18 @@ img {
   margin-bottom: 24px;
   padding: 8px;
   background-color: #fff;
+
+  @media screen and(min-width:768px) {
+    width: 336px;
+  }
 }
 
+@media screen and(min-width:768px) {
+  .castomers__thumbs {
+    display: flex;
+  }
+}
 .customers__title {
-  margin: 0 auto;
   width: 280px;
   font-family: 'Roboto';
   font-style: normal;
@@ -36,9 +52,6 @@ img {
 }
 
 .customers__description {
-  margin: 0 auto;
-  width: 280px;
-  height: 32px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
