@@ -1,34 +1,20 @@
 
-.hero__buttonOpenModal {
-    width: 98px;
-        height: 32px;
+.buttonOpenModal {
+    
+        padding: 6px 18px;
         color: #2C2C2C;
         background-color: #BBF330;
         border-radius: 30px;
         border: none;
         cursor: pointer;
         margin-left: 30px;
-        
+
+            
         &:hover,
         &:focus {
             background: #B5FF00;
             }
-
-    // @mixin pc {
-    //     width: 98px;
-    //     height: 32px;
-    //     color: #2C2C2C;
-    //     background-color: #BBF330;
-    //     border-radius: 30px;
-    //     border: none;
-    //     cursor: pointer;
-    //     margin-left: 30px;            
-    // } 
-    //     &:hover,
-    //     &:focus {
-    //         background-color: #FFFFFF;
-    //         border: 2px solid #597D00;
-    //     }
+    
 }
 
 .hero__button {
@@ -47,8 +33,6 @@
             border: 2px solid #597D00;
             }
 }
-
-
 
 .offerings__button {
     width: 106px;
@@ -137,5 +121,32 @@
             &:focus {            
                 fill: #FFE550;
             }
+}
+
+.modal__submit-btn {
+    padding: 10px 38px;
+    color: #2C2C2C;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.54;
+    background-color: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border: 2px solid #597D00;
+    }
+    &:active {
+        background: #BBF330;
+    }
 }
 
