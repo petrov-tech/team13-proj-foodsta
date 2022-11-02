@@ -59,9 +59,31 @@
 }
 .offerings__title {
     margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.18;
+
+    @include tablet {
+        font-size: 42px;
+        line-height: 1.17;
+    }
+
+    @include pc {
+        line-height: 1.2;
+    }
 }
 .offerings__paragraph {
     margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    @include pc {
+        line-height: 1.5;
+    }
 }
 .advantages {
     &__list {
@@ -110,6 +132,20 @@
         margin-top:8px ;
         margin-bottom: 16px;
 
+        font-size: 18px;
+        line-height: 1.17;
+    
+        @include pc {
+            line-height: 1.4;
+        }
+    }
+    &__paragraph {
+        font-size: 14px;
+        line-height: 1.14;
+
+        @include pc {
+            line-height: 1.5;
+        }
     }
 }
 
