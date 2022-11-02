@@ -4,14 +4,16 @@ img {
 
 .customers {
   margin-bottom: 0px;
-  margin: 0 auto;
-  max-height: 769px;
+  height: 769px;
 
-  background-image: url(../images/customers/mobile/background-mob-1x.png);
+  background-image: url(../images/customers/mobile/background-mob-320-1x.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .customers__cards {
+  margin: 0 auto;
+  width: 280px;
   border-radius: 0px 25px 25px 25px;
   margin-bottom: 24px;
   padding: 8px;
@@ -19,6 +21,8 @@ img {
 }
 
 .customers__title {
+  margin: 0 auto;
+  width: 280px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -32,6 +36,9 @@ img {
 }
 
 .customers__description {
+  margin: 0 auto;
+  width: 280px;
+  height: 32px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
