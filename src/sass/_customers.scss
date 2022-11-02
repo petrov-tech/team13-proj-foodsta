@@ -21,6 +21,7 @@ img {
 
   @media screen and(min-width:1280px) {
     background-image: url(../images/customers/desktop/background-desk-x1.png);
+    height: 647px;
   }
 }
 
@@ -37,6 +38,13 @@ img {
     height: 244px;
     padding: 12px;
     margin: 0;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 501px;
+    height: 227px;
+    padding: 14px;
+    margin-right: 139px;
   }
 }
 
