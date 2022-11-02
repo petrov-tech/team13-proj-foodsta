@@ -1,6 +1,28 @@
 @import './common';
+@import './utils/global';
 @import './example';
 @import './buttons';
 @import './utils/mixins';
-@import './layout/offerings';
 
+
+@import './hero';
+@import './layout/offerings';
+@import "./modal-window";
+@import './customers';
+
+
+@import './layout/header';
+
+
+@import './footer';
+
+
+
+@import './layout/header';
+
+@import './layout/favorites';
+// @import './layout/customers';
+
+
+
+@import './burger_menu';

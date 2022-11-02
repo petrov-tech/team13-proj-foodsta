@@ -1,0 +1,104 @@
+img {
+  display: block;
+}
+
+.customers {
+  margin-bottom: 0px;
+  height: 769px;
+
+  background-image: url(../images/customers/mobile/background-mob-320-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customers__cards {
+  margin: 0 auto;
+  width: 280px;
+  border-radius: 0px 25px 25px 25px;
+  margin-bottom: 24px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.customers__title {
+  margin: 0 auto;
+  width: 280px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+
+  color: #2c2c2c;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.customers__description {
+  margin: 0 auto;
+  width: 280px;
+  height: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14px;
+
+  color: #2c2c2c;
+
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.customers__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #2c2c2c;
+
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.customers__client {
+  display: flex;
+}
+
+.customers__block {
+  padding-right: 16px;
+  padding-left: 16px;
+  border-right: 0.854167px solid #7eb101;
+}
+
+.customers__name {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.customers__sourname {
+  margin: 0;
+}
+.customers__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.customers__item {
+  padding: 8px;
+  background-color: #fff;
+  margin-bottom: 28px;
+}
+
+.customers__icons {
+  padding: 0;
+  display: flex;
+  gap: 4px;
+  margin-top: 0px;
+  margin-bottom: 28px;
+  list-style: none;
+}
