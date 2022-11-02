@@ -1,8 +1,10 @@
 .hero {
-@media screen and (min-width:1280px) {
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
+    padding-bottom: 0;
+
+    @media screen and (min-width:1280px) {
+        padding-top: 14px;
+        // padding-bottom: 14px;
+    }
 }
 
 .hero__container {
@@ -22,6 +24,7 @@
 
     @media screen and (min-width:768px)  and (max-width:1279px) {
             align-items: flex-start;
+            margin-bottom: 78px;
             padding-left: 32px;
             padding-right: 32px;
             height: 409px;
@@ -81,7 +84,6 @@
         margin-bottom: 28px;
         font-size: 14px;
             line-height: 1.5;
-
     }
 
     @media screen and (min-width:768px) {
@@ -95,53 +97,55 @@
 
 .hero__slider {
     position: relative;
-    border-radius: 50%;
+    margin-right: 14px;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1279px) {
         margin-top: auto;
-        width: 320px;
-        height: auto;
-        border: 14px solid yellow;
-    }
-
-    @media screen and (min-width:1280px){
-        width: 580px;
-        height: auto;
-        border: 26px solid yellow;
-    }
-    
-    @media screen and (max-width:767px) {
-        display: none;
-        
+        margin-right: 8px;
     }
 }
 
 .hero__img {
     border-radius: 50%;
+
+    @media screen and (max-width:767px) {
+            display: none;
+            }
+
+    @media screen and (min-width:768px) {
+        margin-top: auto;
+        border: 14px solid #FFE550;
+    }
+
+    @media screen and (min-width:1280px){
+        border: 26px solid #FFE550;
+    }
 }
 
 
 .hero__slider_btn {
     position: absolute;
-    top: 50%;
-    left: -18px;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 40px;
+
+    top: 50%;
+    left: 8px;
+    transform: translate(-50%, -50%);
+   
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #fefefe;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    @media screen and (max-width:767px) {
+            display: none;
+        }
 
     @media screen and (min-width:768px) and (max-width:1279px)  {
         width: 34px;
         height: 28px;
-        position: absolute;
-        top: 50%;
-        left: -7px;
+        left: 8px;
         transform: translate(-50%, -50%);
     }
 
@@ -159,26 +163,28 @@
 
 .hero__slider_btn-right {
     position: absolute;
-    top: 50%;
-    right: -66px;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 40px;
+
+    top: 50%;
+    right: -14px;
+    transform: translate(0, -50%);
+    
     border: none;
     border-radius: 8px;
     background-color: #fefefe;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
+    @media screen and (max-width:767px) {
+            display: none;
+        }
+
     @media screen and (min-width:768px) and (max-width:1279px){
         width: 34px;
         height: 28px;
-        position: absolute;
-        top: 50%;
-        right: -42px;
-        transform: translate(-50%, -50%);
+        right: -8px;
+        transform: translate(0, -50%);
 
     }
     
