@@ -97,11 +97,11 @@
 }
 
 .modal__input-modal:not(:placeholder-shown):required:valid {
-    border-color: green;
+    border-color: #7EB101;
 }
 
 .modal__input-modal:not(:placeholder-shown):required:invalid {
-    border-color: red;
+    border-color: #FF705D;
 }
 
 .is-hidden {
@@ -127,8 +127,8 @@
 
     &:hover,
     &:focus {
-        fill: var(--accent-color);
-    }
+        fill: #BBF330;
+      }
 }
 
 .backdrop.is-hidden .modal {
@@ -145,11 +145,11 @@
 
 
 .modal__form-element input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid #BBF330;
 }
 
 .modal__form-element input:focus+svg {
-    fill: var(--accent-color);
+    fill: #BBF330;
     transition: fill var(--time-cubic-bezier);
 }
 
