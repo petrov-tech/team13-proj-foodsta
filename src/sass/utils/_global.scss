@@ -15,22 +15,50 @@ body.modal-open {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    @media screen and (max-width:767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -55,7 +83,4 @@ img {
 
 
 
-.section {
-    padding-top: 60px;
-        padding-bottom: 60px;
-}
+

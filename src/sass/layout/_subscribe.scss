@@ -1,0 +1,117 @@
+.subscribe {
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px){
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding-bottom: 64px;
+        }
+}
+
+.subscribe__wrap {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 768px){
+        width: 768px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+        @media screen and (min-width: 1280px){
+        width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: row-reverse;
+        }
+}
+
+.subscribe__image{
+display: flex;
+justify-content: center;
+
+@media screen and (min-width: 768px){
+justify-content: flex-end;
+}
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    margin: 17px 0 20px 0;
+
+    @media screen and (min-width: 768px){
+        font-size: 42px;
+        margin: 20px 0;
+    }
+
+        @media screen and (min-width: 1280px){
+        margin: 0 0 20px 0;
+        }
+}
+
+.subscribe__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 24px;
+    }
+}
+
+.subscribe__form {
+    text-align: end;
+
+    @media screen and (min-width: 480px){
+        text-align: start;
+    }
+}
+
+.subscribe__input {
+    padding-left: 8px;
+    width: 280px;
+    height: 42px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    margin: 0 0 20px 0;
+
+    @media screen and (min-width: 768px){
+        width: 394px;
+        margin: 0 22px 0 0;
+    }
+
+        @media screen and (min-width: 1280px) {
+            margin: 0 32px 0 0;
+        }
+}
+
+.subscribe__btn {
+        width: 103px;
+        height: 42px;
+        color: #2C2C2C;
+        background-color: #BBF330;
+        border: transparent;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        margin: 0;
+
+
+        
+    &:hover,
+    &:focus {
+        background-color: #FFE550;
+        }
+}
