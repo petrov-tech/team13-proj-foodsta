@@ -15,7 +15,7 @@
     
     @include mobile {
         width: $mobile;
-        padding-top: 90px;
+        padding-top: 89.5px;
     }
     @include tablet {
         background: url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
@@ -69,6 +69,10 @@
 
         @include tablet {
             display: flex;
+            margin-bottom: 40px;
+        }
+        @include pc {
+            margin-right: 32px;
         }
     }
 
@@ -78,7 +82,7 @@
 
             @include tablet {
                 margin-right: 116px;
-            }
+            }            
             
         }
         &:first-child::before {
@@ -121,16 +125,20 @@
     gap: 7px;
     padding: 7px 0;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 13px;
     line-height: 1.5;
 
-    &:hover {
+    &:hover,
+    &:focus {
+        color: 7EB101;
         fill: #7EB101;
     }
     &:active {
+        color: black;
         fill: black;
+    }
+    @include pc {
+        display: none;
     }
 }
