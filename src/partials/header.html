@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container header__container">
         <nav class="navigation">
-            <a class="logo logo-header" href="./index.html">
+            <a class="logo-header" href="./index.html">
                 <picture>
                     <source srcset="
                     ./images/header/logo-desk-1x.png 1x,
@@ -26,17 +26,18 @@
                 </picture>
             </a>
 
-            <!-- <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg viewBox="0 0 32 32" width="40" height="40" class="menu-open"
-                aria-label="Переключатель">
-                  <use class="icon-menu" xlink:href="./images/sprite.svg#icon-menu"></use>
-                </svg>
-            </button>     -->
+            <div class="burger_menu-box">
+                <button type="button" class="burger_menu" data-modall-open>
+                  <svg width="28" height="28" aria-label="Перемикач мобільного меню">
+                    <use href="/src/images/symbol-defs.svg#icon-menu"></use>
+                  </svg>
+                </button>
+            </div>
 
-            <div class="header__wrap">
-                <ul class="navigation_list">
+            <div class="navigation__wrap">
+                <ul class="navigation_list list">
                     <li class="navigation_item">
-                      <a class="navigation_link navigation_link--current" href="#hero">Hero</a>
+                      <a class="navigation_link" href="#hero">Hero</a>
                     </li>
                     <li class="navigation_item">
                       <a class="navigation_link" href="#offerings">Offerings</a>
@@ -51,10 +52,12 @@
                         <a class="navigation_link" href="#subscribe">Subscribe</a>
                     </li>
                 </ul>
-                <button type="button" class="hero__buttonOpenModal" data-modal-open>
+                <button type="button" class="hero__buttonOpenModal header__button" data-modal-open>
                     Order Now
                 </button>
             </div>
-        </nav>    
+        </nav> 
+        
+        <!-- <include src="./partials/burger_menu.html"></include> -->
     </div>
 </header>

@@ -1,0 +1,305 @@
+ul {
+    padding: 0;
+    list-style: none;
+    padding-left: 0;
+}
+ul,
+p {
+    margin: 0;
+}
+button {
+    border: none;
+    outline: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    outline: 0;
+    text-decoration: none;  
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    @media screen and(min-width: 480px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }    
+
+    @media screen and(min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and(min-width: 1280px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    } 
+    
+}
+.container {   
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }    
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    } 
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    } 
+}
+
+.container__footer {
+    
+    padding: 60px 0;
+    @media screen and(min-width:1280px) {
+        padding: 100px 0;
+   }
+}
+
+.container__footer {
+     @media screen and(min-width:480px) {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:
+        url("../images/footer-bg/bg-tel-1x.jpg");
+
+         @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+        background-image:
+        url("../images/footer-bg/bg-tel-2x.jpg");
+        }
+    }
+
+    @media screen and(min-width:768px) {
+        width: 768px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:
+        url("../images/footer-bg/bg-tablet-1x.jpg");
+            
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:
+        url("../images/footer-bg/bg-tablet-2x.jpg");  
+        }
+    }    
+
+    @media screen and(min-width:1280px) {
+               width: 1280px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image:
+                url("../images/footer-bg/bg-desk-1x.jpg");  
+                
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image:
+                url("../images/footer-bg/bg-desk-2x.jpg");
+                }
+    }
+}
+
+
+.logo__footer {
+    width: 69px;
+   
+    margin-right: 81px;
+
+    @media screen and(min-width:768px) {
+        margin-left: 1px;
+        margin-right: 114px;
+    } 
+        
+
+    @media screen and(min-width:1280px) {
+        width: 66px;
+        margin-right: 148px;
+    }
+}
+.footer__logo__list {
+    display: flex;
+    flex-direction: row;
+    // align-items: baseline;
+    @media screen and(min-width:1280px) {
+        margin-right: 320px;
+    }
+}
+.footer__logo__list .footer__title__from {
+    @media screen and(min-width:1280px) {
+        display: flex; 
+    }
+}
+
+.footer__list {
+    display: block;
+    margin-bottom: 40px;
+    @media screen and(min-width:768px) {
+        display: flex;
+        margin-bottom: 57px;
+    }
+    @media screen and(min-width:1280px) {
+        margin-bottom: none;
+    }
+}
+
+.footer__link {   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: #000000;
+}
+.footer__item {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 0;
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+}
+.footer__title__from {
+    display: block;
+    margin-bottom: 60px;
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 100px;
+    }
+    @media screen and(min-width:1280px) {
+        margin-bottom: 80px;
+    
+    }
+}
+
+.footer__title {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: #2C2C2C;
+}
+
+.footer__input {
+    width: 279px;
+    height: 42px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12.5;
+
+    color: #505050;
+
+    background: #FEFEFE;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    padding-left: 12px;
+}
+
+
+// .footer__button {
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 13px;
+//     line-height: 11.54;
+
+//     color: #2C2C2C;
+// }
+
+.footer__discriotion {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+
+    color: #2C2C2C;
+    margin-top: 20px;
+    @media screen and(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.166;
+        margin-top: 12px;
+    }
+}
+
+.footer__discriotion__item {
+    text-decoration-line: underline;
+    color: #7EB101;
+}
+
+.footer__nav__data {
+    @media screen and(min-width:768px) {
+        display: flex;
+    justify-content: space-between;
+    }
+}
+.footer__list__nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    @media screen and(min-width:768px) {
+        margin-bottom: 0;
+    }
+}
+.footer__nav {
+    &:not(:last-child) {
+        margin-right: 33px;   
+    }
+
+    @media screen and(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.166;
+        &:not(:last-child) {
+            margin-right: 20px;   
+        }
+    }
+}
+
+.nav__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+
+    color: #7EB101;
+}
+
+
+.footer__data {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+
+    color: #2C2C2C;
+    text-align: center;
+    @media screen and(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.166;
+        // text-align: end;
+    }
+}
