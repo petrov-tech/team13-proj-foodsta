@@ -138,11 +138,7 @@
     
     }
 }
-.title__from {
-    @media screen and(min-width:768px) {
-        display: flex;
-    }
-}
+
 .footer__title {
     margin-bottom: 12px;
     font-style: normal;
@@ -169,10 +165,7 @@
     border: 0.854167px solid #FFE550;
     border-radius: 30px;
     padding:12px 61.5px 12px 12px;
-    // padding-left: 12px;
-    // padding-top: 12px;
-    // padding-bottom: 12px;
-    // padding-right: 61.5px;
+
 
     &:hover,
     &:focus {            
