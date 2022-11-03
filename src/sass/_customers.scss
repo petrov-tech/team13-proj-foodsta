@@ -10,7 +10,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media screen and(max-width:320px) {
+  @media screen and(min-width:320px) {
     background-image: url(../images/customers/mobile/background-mob-320-1x.png);
   }
 
