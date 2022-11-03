@@ -6,8 +6,8 @@
   height: 100vh;
   background: rgba(94, 99, 99, 0.7);
   opacity: 1;
-  transition: opacity 250ms var(--cubic-bezier);
-  z-index: 10;
+  transition: opacity 250ms; 
+  z-index: 999;
 }
 
 .modal {
@@ -21,22 +21,19 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 30px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--time-cubic-bezier);
+    transition: transform;
 
     @include tablet {
         width: 458px;
         padding: 32px;
         }
-    
-  
+      
     &__title {
         text-align: center;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.21;
         margin-top: 12px;
-       
-        
     }
 
     &__form-element {
@@ -45,6 +42,7 @@
         margin-top: 24px;
        
     }
+
     &__form-label {
         font-weight: 500;
         font-size: 16px;
@@ -69,31 +67,24 @@
         &:focus {
             outline: transparent; 
         }
-        
     }
 
     &__form {
         margin-bottom: 20px;
-       
     }
 
     &__contract {
         margin-left: 6px;
-        color: var(--accent-color);
         text-decoration: none;
         text-decoration: underline;
     }
-
-    
 
     &__form-field {
         position: relative;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-        
     }
-  
 }
 
 .modal__input-modal:not(:placeholder-shown):required:valid {
@@ -107,7 +98,7 @@
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
-  transition: visibility var(--time-cubic-bezier);
+  transition: visibility;
 }
 
 .modal__close-button {
@@ -123,11 +114,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     border: none;
     cursor: pointer;
-    transition: fill var(--time-cubic-bezier);
+    transition: fill;
 
     &:hover,
     &:focus {
-        fill: #BBF330;
+        fill: #7eb101;
       }
 }
 
@@ -135,14 +126,11 @@
   transform: translate(-50%, -50%) scale(0.4);
 }
 
-
 .modal__form-field svg {
   position: absolute;
   top: 50%;
   left: 12px;
 }
-
-
 
 .modal__form-element input:focus {
     border: 1px solid #BBF330;
@@ -150,14 +138,12 @@
 
 .modal__form-element input:focus+svg {
     fill: #BBF330;
-    transition: fill var(--time-cubic-bezier);
+    transition: fill;
 }
 
 .modal__form .btn {
   border: none;
   padding: 10px 52px;
-  color: var(--brand-color);
-  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
