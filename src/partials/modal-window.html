@@ -12,11 +12,10 @@
             name="username"
             id="username"
             required
+            minlength="3"
+            maxlength="25"
             placeholder="Your name"
           />
-          <!-- <svg class="icon-person-black-18dp-1" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
-              </svg> -->
         </label>
       </div>
 
@@ -30,10 +29,10 @@
             id="phone_number"
             required
             placeholder="+38(0_ _)_ _ _  _ _  _ _"
+            pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+            minlength="13"
+            maxlength="13"
           />
-          <!-- <svg class="icon-phone-black-18dp-1" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
-              </svg> -->
         </label>
       </div>
 
@@ -45,12 +44,9 @@
             type="email"
             name="email"
             id="email"
+            required
             placeholder="example@gmail.com"
           />
-
-          <!-- <svg class="icon-email-black-18dp-1" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
-              </svg> -->
         </label>
       </div>
       <button type="submit" class="modal__submit-btn">Send</button>
