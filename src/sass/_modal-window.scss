@@ -7,7 +7,7 @@
   background: rgba(94, 99, 99, 0.7);
   opacity: 1;
   transition: opacity 250ms var(--cubic-bezier);
-  z-index: 10;
+  z-index: 999;
 }
 
 .modal {
@@ -27,16 +27,13 @@
         width: 458px;
         padding: 32px;
         }
-    
-  
+      
     &__title {
         text-align: center;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.21;
         margin-top: 12px;
-       
-        
     }
 
     &__form-element {
@@ -45,6 +42,7 @@
         margin-top: 24px;
        
     }
+
     &__form-label {
         font-weight: 500;
         font-size: 16px;
@@ -69,12 +67,10 @@
         &:focus {
             outline: transparent; 
         }
-        
     }
 
     &__form {
         margin-bottom: 20px;
-       
     }
 
     &__contract {
@@ -84,16 +80,12 @@
         text-decoration: underline;
     }
 
-    
-
     &__form-field {
         position: relative;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-        
     }
-  
 }
 
 .modal__input-modal:not(:placeholder-shown):required:valid {
@@ -127,7 +119,7 @@
 
     &:hover,
     &:focus {
-        fill: #BBF330;
+        fill: #7eb101;
       }
 }
 
@@ -135,14 +127,11 @@
   transform: translate(-50%, -50%) scale(0.4);
 }
 
-
 .modal__form-field svg {
   position: absolute;
   top: 50%;
   left: 12px;
 }
-
-
 
 .modal__form-element input:focus {
     border: 1px solid #BBF330;
