@@ -1,13 +1,13 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(94, 99, 99, 0.7);
-    opacity: 1;
-    transition: opacity 250ms var(--cubic-bezier);
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(94, 99, 99, 0.7);
+  opacity: 1;
+  transition: opacity 250ms var(--cubic-bezier);
+  z-index: 10;
 }
 
 .modal {
@@ -28,26 +28,20 @@
         padding: 32px;
         }
     
-    @include pc {
-        // width: 1200px;
-        }
-
+  
     &__title {
         text-align: center;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.21;
         margin-top: 12px;
-        // margin-bottom: 20px;
-        // letter-spacing: 0.03em;
-        // color: var(--second-black-color);
+       
         
     }
 
     &__form-element {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
         margin-top: 24px;
        
     }
@@ -65,17 +59,22 @@
         height: 48px;
         padding-left: 12px;
         background: #FFFFFF;
-        border: 1px solid #7EB101;
+        border: 1px solid rgba(18, 18, 18, 0.12);
         box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 30px;
         font-size: 16px;
         line-height: 1.25;
-       
+        
+        &:hover,
+        &:focus {
+            outline: transparent; 
+        }
         
     }
 
     &__form {
         margin-bottom: 20px;
+       
     }
 
     &__contract {
@@ -85,40 +84,7 @@
         text-decoration: underline;
     }
 
-    &__submit-btn {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.54;
-        color: #2C2C2C;
-        // border: none;
-        width: 106px;
-        height: 40px;
-        background: #FFFFFF;
-        border: 2px solid #7EB101;
-        border-radius: 30px;
-        margin-top: 32px;
-        margin-left: auto;
-        margin-right: auto;
-        // color: var(--brand-color);
-        // background-color: var(--accent-color);
-        // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        // border-radius: 4px;
-        // font-weight: 700;
-        // font-size: 16px;
-        // line-height: 1.9;
-        // letter-spacing: 0.06em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        // transition: background-color var(--time-cubic-bezier);
-
-        &:focus {
-            background: var(--active-color);
-            transition: background-color var(--time-cubic-bezier);
-        }
-    }
+    
 
     &__form-field {
         position: relative;
@@ -127,14 +93,21 @@
         letter-spacing: 0.01em;
         
     }
+  
+}
 
-   
+.modal__input-modal:not(:placeholder-shown):required:valid {
+    border-color: #7EB101;
+}
+
+.modal__input-modal:not(:placeholder-shown):required:invalid {
+    border-color: #FF705D;
 }
 
 .is-hidden {
-    visibility: hidden;
-    pointer-events: none;
-    transition: visibility var(--time-cubic-bezier);
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility var(--time-cubic-bezier);
 }
 
 .modal__close-button {
@@ -154,57 +127,38 @@
 
     &:hover,
     &:focus {
-        fill: var(--accent-color);
-    }
+        fill: #BBF330;
+      }
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.4);
+  transform: translate(-50%, -50%) scale(0.4);
 }
-
-// .backdrop::after {
-//     position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         background: rgba(0, 0, 0, 0.5);
-//         content: '';
-//     }
 
 
 .modal__form-field svg {
-    position: absolute;
-    top: 50%;
-    left: 12px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
 }
 
-// .modal__form-element input {
-//     height: 40px;
-//     border: 1px solid var(--modal-no-focus-color);
-//     border-radius: 4px;
-//     padding-left: 42px;
-//     width: 100%;
-//     outline: none;
-//     cursor: pointer;
-//     transition: border-color var(--time-cubic-bezier);
-// }
+
 
 .modal__form-element input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid #BBF330;
 }
 
 .modal__form-element input:focus+svg {
-    fill: var(--accent-color);
+    fill: #BBF330;
     transition: fill var(--time-cubic-bezier);
 }
 
 .modal__form .btn {
-    border: none;
-    padding: 10px 52px;
-    color: var(--brand-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  border: none;
+  padding: 10px 52px;
+  color: var(--brand-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
