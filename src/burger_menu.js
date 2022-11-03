@@ -10,7 +10,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-      refs.modal.classList.toggle("burger_menu-is-hidden");
+      refs.modal.classList.toggle("menu-is-hidden");
       refs.body.classList.toggle("no-scroll");
   }
 })();

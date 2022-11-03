@@ -2,7 +2,7 @@
          
    
     @include tablet {        
-        margin-top: -212px;
+        margin-top: -254px;
     }
     
 }
@@ -15,7 +15,7 @@
     
     @include mobile {
         width: $mobile;
-        padding-top: 90px;
+        padding-top: 89.5px;
     }
     @include tablet {
         background: url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
@@ -59,9 +59,31 @@
 }
 .offerings__title {
     margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.18;
+
+    @include tablet {
+        font-size: 42px;
+        line-height: 1.17;
+    }
+
+    @include pc {
+        line-height: 1.2;
+    }
 }
 .offerings__paragraph {
     margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    @include pc {
+        line-height: 1.5;
+    }
 }
 .advantages {
     &__list {
@@ -69,6 +91,10 @@
 
         @include tablet {
             display: flex;
+            margin-bottom: 40px;
+        }
+        @include pc {
+            margin-right: 32px;
         }
     }
 
@@ -78,7 +104,7 @@
 
             @include tablet {
                 margin-right: 116px;
-            }
+            }            
             
         }
         &:first-child::before {
@@ -106,6 +132,20 @@
         margin-top:8px ;
         margin-bottom: 16px;
 
+        font-size: 18px;
+        line-height: 1.17;
+    
+        @include pc {
+            line-height: 1.4;
+        }
+    }
+    &__paragraph {
+        font-size: 14px;
+        line-height: 1.14;
+
+        @include pc {
+            line-height: 1.5;
+        }
     }
 }
 
@@ -121,16 +161,20 @@
     gap: 7px;
     padding: 7px 0;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 13px;
     line-height: 1.5;
 
-    &:hover {
+    &:hover,
+    &:focus {
+        color: 7EB101;
         fill: #7EB101;
     }
     &:active {
+        color: black;
         fill: black;
+    }
+    @include pc {
+        display: none;
     }
 }
