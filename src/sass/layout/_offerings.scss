@@ -130,9 +130,7 @@
             background: white url(../images/offerings/touch.svg) 50% 50% no-repeat;
             border-radius: 50%;
         }
-        @include tablet {
-            width: 253px;
-        }
+        
     }
     &__title {
         margin-top:8px ;
@@ -140,7 +138,8 @@
 
         font-size: 18px;
         line-height: 1.17;
-    
+        
+        
         @include pc {
             line-height: 1.4;
         }
@@ -149,6 +148,9 @@
         font-size: 14px;
         line-height: 1.14;
 
+        @include tablet {
+            width: 253px;
+        }
         @include pc {
             line-height: 1.5;
         }
