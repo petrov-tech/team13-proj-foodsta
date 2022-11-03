@@ -1,10 +1,9 @@
 .container__footer {
   
-        // min-width: 320px;
-        // height: 100%;
+     
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         background-image:
         url("../images/footer-bg/bg-tel-1x.jpg");
 
@@ -65,9 +64,13 @@
 }
 .footer__logo__list {
     display: flex;
-
+    @media screen and(min-width:768px) {
+        margin-bottom: 40px;
+    }
+    
     @media screen and(min-width:1280px) {
         margin-right: 320px;
+        margin-bottom: 129px;
     }
 }
 .footer__list__from {
@@ -90,10 +93,11 @@
     margin-bottom: 40px;
     @media screen and(min-width:768px) {
         display: flex;
-        margin-bottom: 57px;
+        text-align: center;
+       
     }
     @media screen and(min-width:1280px) {
-        margin-bottom: 0;
+        text-align: auto;
     }
 }
 
@@ -133,16 +137,12 @@
         margin-bottom: 100px;
     }
     @media screen and(min-width:1280px) {
-        // margin-bottom: 80px;
+      
         margin-bottom: 0;
     
     }
 }
-.title__from {
-    @media screen and(min-width:768px) {
-        display: flex;
-    }
-}
+
 .footer__title {
     margin-bottom: 12px;
     font-style: normal;
@@ -152,7 +152,11 @@
 
     color: #2C2C2C;
 }
-
+.footer__from {
+    @media screen and(min-width:768px) {
+        display: flex;
+    }
+}
 .footer__input {
     
     width: 279px;
@@ -169,10 +173,7 @@
     border: 0.854167px solid #FFE550;
     border-radius: 30px;
     padding:12px 61.5px 12px 12px;
-    // padding-left: 12px;
-    // padding-top: 12px;
-    // padding-bottom: 12px;
-    // padding-right: 61.5px;
+
 
     &:hover,
     &:focus {            
@@ -183,11 +184,13 @@
     // }
 }
 
-.footer__button {
-    margin-right: 197px;
+.button__input {
+    display: block;
+    margin-left: auto;
     margin-top: 20px;
    
     @media screen and(min-width: 768px) {
+        
         margin-left: 13px;
         margin-top: 0;
         margin-right:0;
