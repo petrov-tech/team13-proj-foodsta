@@ -6,7 +6,7 @@
   height: 100vh;
   background: rgba(94, 99, 99, 0.7);
   opacity: 1;
-  transition: opacity 250ms var(--cubic-bezier);
+  transition: opacity 250ms; 
   z-index: 999;
 }
 
@@ -21,7 +21,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 30px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--time-cubic-bezier);
+    transition: transform;
 
     @include tablet {
         width: 458px;
@@ -75,7 +75,6 @@
 
     &__contract {
         margin-left: 6px;
-        color: var(--accent-color);
         text-decoration: none;
         text-decoration: underline;
     }
@@ -99,7 +98,7 @@
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
-  transition: visibility var(--time-cubic-bezier);
+  transition: visibility;
 }
 
 .modal__close-button {
@@ -115,7 +114,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     border: none;
     cursor: pointer;
-    transition: fill var(--time-cubic-bezier);
+    transition: fill;
 
     &:hover,
     &:focus {
@@ -139,14 +138,12 @@
 
 .modal__form-element input:focus+svg {
     fill: #BBF330;
-    transition: fill var(--time-cubic-bezier);
+    transition: fill;
 }
 
 .modal__form .btn {
   border: none;
   padding: 10px 52px;
-  color: var(--brand-color);
-  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
