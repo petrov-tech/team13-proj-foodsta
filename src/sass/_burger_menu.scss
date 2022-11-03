@@ -7,15 +7,15 @@ ul {
   margin: 0;
 }
 
-.burger_menu-box {
-  position: fixed;
-  right: 20px;
-  top: 22px;
-}
+/* .burger_menu-box {
+   position:absolute;
+   right: 20px;
+   top: 22px;
+ } */
 .burger_menu {
   border: none;
   outline: none;
-  background-color:rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   display: block;
   cursor: pointer;
   fill: #7eb101;
@@ -23,16 +23,15 @@ ul {
 
 .burger_menu:active {
   fill: #ffe550;
-  
 }
 
 .burger_menu-conteiner {
   width: 130px;
   height: 255px;
-  background:#FEFEFE;
+  background: #FEFEFE;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   border-radius: 30px 0px 30px 30px;
-  position: fixed;
+  position: absolute;
   top: 50px;
   right: 20px;
   transition-duration: 500ms;
@@ -57,7 +56,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.burger_menu-is-hidden {
+.menu-is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -69,18 +68,25 @@ ul {
   padding-left: 16px;
 }
 
+.burger_menu-item:focus,
+.burger_menu-item:hover,
 .burger_menu-item:active {
   background: #bbf330;
 }
 
+.burger_menu-item:first-child:focus,
+.burger_menu-item:first-child:hover,
 .burger_menu-item:first-child:active {
   background: #bbf330;
   border-radius: 30px 0px 0px 0px;
 }
 
+.burger_menu-item:last-child:hover,
+.burger_menu-item:last-child:focus,
 .burger_menu-item:last-child:active {
   background: #bbf330;
   border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 4px rgba(187, 243, 48, 1);
 }
 
 .burger_menu-text {
