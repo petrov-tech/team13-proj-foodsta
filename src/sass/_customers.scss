@@ -6,9 +6,23 @@ img {
   margin-bottom: 0px;
   height: 769px;
 
-  background-image: url(../images/customers/mobile/background-mob-320-1x.png);
+  background-image: url(../images/customers/mobile/background-mob-1x.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  // @media screen and(max-width:320px) {
+  //   background-image: url(../images/customers/mobile/background-mob-320-1x.png);
+  // }
+
+  @media screen and(min-width:768px) {
+    background-image: url(../images/customers/tablet/backgound-tab-x1.png);
+    height: 544px;
+  }
+
+  @media screen and(min-width:1280px) {
+    background-image: url(../images/customers/desktop/background-desk-x1.png);
+    height: 647px;
+  }
 }
 
 .customers__cards {
@@ -18,8 +32,28 @@ img {
   margin-bottom: 24px;
   padding: 8px;
   background-color: #fff;
+
+  @media screen and(min-width:768px) {
+    width: 336px;
+    height: 244px;
+    padding: 12px;
+    margin: 0;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 501px;
+    height: 227px;
+    padding: 14px;
+    margin-right: 139px;
+  }
 }
 
+@media screen and(min-width:768px) {
+  .castomers__thumbs {
+    display: flex;
+    gap: 32px;
+  }
+}
 .customers__title {
   margin: 0 auto;
   width: 280px;
@@ -33,12 +67,19 @@ img {
 
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media screen and(min-width:768px) {
+    margin-left: 0;
+    width: 501px;
+
+    font-size: 42px;
+    line-height: 1.16;
+  }
 }
 
 .customers__description {
-  margin: 0 auto;
   width: 280px;
-  height: 32px;
+  margin: 0 auto;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -49,6 +90,14 @@ img {
 
   margin-top: 0;
   margin-bottom: 32px;
+
+  @media screen and(min-width:768px) {
+    margin-left: 0;
+    width: 501px;
+
+    font-size: 16px;
+    line-height: 1.18;
+  }
 }
 
 .customers__text {
@@ -62,6 +111,11 @@ img {
 
   margin-top: 0px;
   margin-bottom: 40px;
+
+  @media screen and(min-width:768px) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
 }
 
 .customers__client {
@@ -77,10 +131,26 @@ img {
 .customers__name {
   margin-top: 0;
   margin-bottom: 2px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #2c2c2c;
 }
 
 .customers__sourname {
   margin: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #2c2c2c;
 }
 .customers__list {
   list-style: none;
