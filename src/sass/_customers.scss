@@ -14,6 +14,10 @@ img {
     background-image: url(../images/customers/mobile/background-mob-320-1x.png);
   }
 
+  @media screen and(min-width:480px) {
+    background-image: url(../images/customers/mobile/background-mob-1x.png);
+  }
+
   @media screen and(min-width:768px) {
     background-image: url(../images/customers/tablet/backgound-tab-x1.png);
     height: 544px;
