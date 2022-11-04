@@ -1,102 +1,95 @@
-.hero__buttonOpenModal {
-  padding: 6px 18px;
-  color: #2c2c2c;
-  background-color: #bbf330;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  margin-left: 30px;
+.header__button {
+  display: none;
+
+  @mixin pc {
+    padding: 6px 18px;
+      color: #2C2C2C;
+      background-color: #BBF330;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.54;
+  }
 
   &:hover,
   &:focus {
-    background: #b5ff00;
+    background-color: #B5FF00;
   }
 }
 
 .hero__button {
-  width: 98px;
-  height: 32px;
-  color: #2c2c2c;
-  background-color: #bbf330;
-  border-radius: 30px;
-  margin-top: 28px;
-  @mixin pc {
-    margin-top: 40px;
-  }
+  padding: 6px 18px;
+    color: #2C2C2C;
+    background-color: #BBF330;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.54;
+
+  
   &:hover,
   &:focus {
-    background-color: #ffffff;
-    border: 2px solid #597d00;
+    background-color: #B5FF00;
   }
 }
 
+
+
 .offerings__button {
-  width: 106px;
-  height: 40px;
-  color: #2c2c2c;
-  background-color: #ffffff;
-  border: 2px solid #7eb101;
-  border-radius: 30px;
+  padding: 10px 22px;
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.54;
 
-  cursor: pointer;
-  margin-top: 28px;
-  margin-left: 20px;
-  margin-right: 24px;
+ 
 
-  @mixin tablet {
-    margin-top: 40px;
-    margin-left: 32px;
-  }
-  @mixin pc {
-    margin-top: 32px;
-    margin-left: 90px;
-  }
   &:hover,
   &:focus {
-    border: #597d00;
+    border: 2px solid #597D00;
   }
 }
 
 .subscribe__button {
-  width: 103px;
-  height: 42px;
-  color: #2c2c2c;
-  background-color: #bbf330;
+  padding: 11px 22px;
+  color: #2C2C2C;
+  background-color: #BBF330;
   border-radius: 30px;
+  border: none;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 197px;
-  @mixin tablet {
-    margin-top: 24px;
-    margin-left: 22px;
-  }
-  @mixin pc {
-    margin-left: 32px;
-  }
+  font-weight: 500;
+    font-size: 13px;
+    line-height: 1.54;
+
+
   &:hover,
   &:focus {
-    background-color: #ffe550;
+    background-color: #B5FF00;
   }
 }
 
 .footer__button {
-    width: 103px;
-    height: 42px;
-    color: #2C2C2C;
-    background-color: #FFFFFF;
-    border: 0.854167px solid #7EB101;    
-    border-radius: 30px;
-    cursor: pointer;
-    // margin-top: 20px; 
-    // margin-left: 197px;    
-        // @mixin pc {
-        //     margin-top: 32px;
-        //     margin-left: 13px;
-        // }
-        &:hover,
-        &:focus {            
-            background-color: #B5FF00;
-            }
+  padding: 11px 22px;
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+  border: 0.854167px solid #7EB101;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+    line-height: 1.54;
+
+  &:hover,
+  &:focus {
+    background-color: #FFE550;
+  }
 }
 
 .burger_menu {
@@ -113,20 +106,39 @@
   @media (min-width: 768px) {
     display: none;
   }
+
   &:hover,
   &:focus {
-    fill: #ffe550;
+    fill: #FFE550;
   }
 }
+.buttonOpenModal {
+
+  padding: 6px 18px;
+  color: #2C2C2C;
+  background-color: #BBF330;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+
+
+  &:hover,
+  &:focus {
+    background: #B5FF00;
+  }
+
+}
+
 
 .modal__submit-btn {
   padding: 10px 38px;
-  color: #2c2c2c;
+  color: #2C2C2C;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.54;
-  background-color: #ffffff;
-  border: 2px solid #7eb101;
+  background-color: #FFFFFF;
+  border: 2px solid #7EB101;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -139,10 +151,10 @@
 
   &:hover,
   &:focus {
-    border: 2px solid #597d00;
+    border: 2px solid #597D00;
   }
 
   &:active {
-    background: #bbf330;
+    background: #BBF330;
   }
 }
