@@ -1,42 +1,39 @@
 .section__offerings {  
-         
-    padding-bottom: 0;
-    @include tablet {        
+    margin: 0 auto;
+    padding-top: 41px;
+    
+
+    background: linear-gradient(to bottom, transparent 0%, transparent 90px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-m.svg) 50% 0 no-repeat;
+    background-size: auto auto;
+        
+    @include mobile-max {
+        max-width: $mobile;
+        
+    }
+    @include tablet {   
+        width: $mobile;
         margin-top: -254px;
     }
-    
-}
-.container__offerings {
-    background:   url(../images/offerings/offerings-bg.svg) 50% 0px no-repeat;    
-    background-size: auto auto;
-    padding: 0;
-    padding-top: 18.55%;    
-    margin: 0 auto;
-    
-    @include mobile {
-        width: $mobile;
-        padding-top: 89.5px;
-    }
     @include tablet {
-        background: url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
-        padding-top: 115px;
+        
+        background: linear-gradient(to bottom, transparent 0%, transparent 110px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        padding-top: 112px;
         width: $tablet;
     }
-    @include pc {        
-        padding-top: 190px;
+    @include pc {
+        background: linear-gradient(to bottom, transparent 0%, transparent 190px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        padding-top: 177px;
+        padding-bottom: 43px;
         width: $pc;
-    }    
-}
-.offerings__warps {
-    background-color: #FFE550;
-    padding-bottom: 60px;
-    @include tablet {
-        padding-bottom: 100px;
     }
+}
+
+.offerings__warps {
+    
     @include pc {
         display: flex;
         align-items: center;
-        padding-bottom: 43px;
+        
         gap: 90px;
     }
 }
@@ -168,15 +165,15 @@
     align-items: center;
     gap: 7px;
     padding: 7px 0;
-
+    text-decoration: none;
 
     font-size: 13px;
     line-height: 1.5;
 
 
     &:active {
-        color: black;
-        fill: black;
+        color: var(--title-color-text);
+        fill: var(--title-color-text);
     }
     @include pc {
         display: none;
