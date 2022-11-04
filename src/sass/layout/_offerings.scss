@@ -16,7 +16,7 @@
     }
     @include tablet {
         
-        background: linear-gradient(to bottom, transparent 0%, transparent 110px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        background: linear-gradient(to bottom, transparent 0%, transparent 116px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
         padding-top: 112px;
         width: $tablet;
     }
