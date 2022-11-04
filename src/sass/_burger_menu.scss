@@ -1,17 +1,3 @@
-.list {
-  list-style: none;
-}
-
-ul {
-  padding-left: 0;
-  margin: 0;
-}
-
-//  .burger_menu-box {
-//    position:absolute;
-//    right: 20px;
-//    top: 22px;
-//  } 
 .burger_menu {
   border: none;
   outline: none;
@@ -101,7 +87,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .burger_menu-box {
+  .burger_menu {
     display: none;
   }
 }
