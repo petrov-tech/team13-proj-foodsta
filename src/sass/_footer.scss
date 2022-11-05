@@ -69,13 +69,14 @@
     display: flex;
    
     @media screen and(min-width:768px) {
+
         margin-bottom: 40px;
         align-items: center;
     }
     
     @media screen and(min-width:1280px) {
-        margin-bottom: 0;
-        align-items: baseline;
+      
+        align-items: center;
     }
 }
 .footer__list__from {
@@ -105,11 +106,11 @@
     line-height: 1.14;
 
     color:#000000;
-
+    transition: color var(--animation-timing-function);
     &:hover,
     &:focus {
         text-decoration-line: underline;
-        // color:var(#BBF330);
+      
         color:var(--button-color);
     }
 }
