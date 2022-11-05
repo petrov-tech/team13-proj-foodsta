@@ -1,6 +1,5 @@
 .header__button {  
-  
-  padding: 6px 18px;
+   padding: 6px 18px;
   color: var(--title-color-text);
   background-color: var(--button-color);
   border-radius: 30px;
@@ -39,6 +38,7 @@
 
 .offerings__button {
   padding: 10px 22px;
+
   color: var(--title-color-text);
   background-color: #FFFFFF;
   border: 2px solid var(--foter-text-color);
@@ -48,7 +48,6 @@
   font-size: 13px;
   line-height: 1.54;
   transition: var(--animation-timing-function);
-
 
   &:hover,
   &:focus {
@@ -91,6 +90,7 @@
   font-size: 13px;
   line-height: 1.54;
   transition: var(--animation-timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--maim-bg-color-and-border);
@@ -117,6 +117,7 @@
     fill: var(--maim-bg-color-and-border);
   }
 }
+
 .hero__buttonOpenModal {
   margin-left: 30px;
 
@@ -162,3 +163,4 @@
     background: var(--button-color);
   }
 }
+

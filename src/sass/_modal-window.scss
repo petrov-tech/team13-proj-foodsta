@@ -6,120 +6,141 @@
   height: 100vh;
   background: rgba(94, 99, 99, 0.7);
   opacity: 1;
-  transition: opacity var(--animation-timing-function); 
+  transition: opacity var(--animation-timing-function);
   z-index: 999;
 }
 
 .modal {
-    width: 320px;
-    height: 449px;
-    position: absolute;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    background: #FFE550;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  width: 320px;
+  height: 449px;
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  background: #ffe550;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--animation-timing-function);
+
+  @include tablet {
+    width: 458px;
+    padding: 32px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+
+  &__form-element:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  &__form-element:first-child {
+    margin-top: 20px;
+  }
+
+  &__form-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.38;
+    margin-left: 12px;
+  }
+
+  &__input-modal {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    height: 48px;
+    padding-left: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--animation-timing-function);
+    font-size: 16px;
+    line-height: 1.25;
+    position: relative;
 
-    @include tablet {
-        width: 458px;
-        padding: 32px;
-        }
-      
-    &__title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.21;
-        margin-top: 12px;
+    &:hover,
+    &:focus {
+      outline: transparent;
     }
+  }
 
-    &__form-element {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
-       
-    }
+  &__form {
+    margin-bottom: 20px;
+  }
 
-    &__form-label {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1,38;
-        margin-left: 12px;
-    }
+  &__contract {
+    margin-left: 24px;
+    text-decoration: none;
+    text-decoration: underline;
+  }
 
-    &__input-modal {
-        position: relative;
-        margin-top: 2px;
-        width: 100%;
-        height: 48px;
-        padding-left: 12px;
-        background: #FFFFFF;
-        border: 1px solid rgba(18, 18, 18, 0.12);
-        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 30px;
-        font-size: 16px;
-        line-height: 1.25;
-        
-        &:hover,
-        &:focus {
-            outline: transparent; 
-        }
-    }
-
-    &__form {
-        margin-bottom: 20px;
-    }
-
-    &__contract {
-        margin-left: 6px;
-        text-decoration: none;
-        text-decoration: underline;
-    }
-
-    &__form-field {
-        position: relative;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-    }
+  &__form-field {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 }
 
 .modal__input-modal:not(:placeholder-shown):required:valid {
-    border-color: #7EB101;
+  border-color: #7eb101;
 }
 
 .modal__input-modal:not(:placeholder-shown):required:invalid {
-    border-color: #FF705D;
+  border-color: #ff705d;
+}
+
+.red-error {
+  color: #ff705d;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.39;
+  display: none;
+  margin-left: 12px;
+  position: absolute;
+
+  @include tablet {
+    font-size: 13px;
+  }
+}
+.modal__input-modal:not(:focus):not(:placeholder-shown):invalid + .red-error {
+  display: block;
 }
 
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
-  transition: visibility;
+  transition: visibility var(--animation-timing-function);
 }
 
 .modal__close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    border-radius: 50%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
-    border: none;
-    cursor: pointer;
-    transition: fill var(--animation-timing-function);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+  border: none;
+  cursor: pointer;
+  transition: fill var(--animation-timing-function);
 
-    &:hover,
-    &:focus {
-        fill: #7eb101;
-      }
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -133,12 +154,12 @@
 }
 
 .modal__form-element input:focus {
-    border: 1px solid var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
-.modal__form-element input:focus+svg {
-    fill: var(--button-color);
-    transition: fill;
+.modal__form-element input:focus + svg {
+  fill: var(--button-color);
+  transition: fill;
 }
 
 .modal__form .btn {
@@ -147,4 +168,3 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
