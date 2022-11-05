@@ -5,7 +5,9 @@
     <form class="modal__form">
       <div class="modal__form-element">
         <label class="modal__form-field" for="username"
-          ><span class="modal__form-label">Name</span>
+          ><span class="modal__form-label">Name</span></label
+        >
+        <div class="input-wrap">
           <input
             class="modal__input-modal"
             type="text"
@@ -16,12 +18,20 @@
             maxlength="25"
             placeholder="Your name"
           />
-        </label>
+          <span class="red-error">
+            <svg class="icon-frame" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-frame"></use>
+            </svg>
+            The name must be between 3 and 25 characters
+          </span>
+        </div>
       </div>
 
       <div class="modal__form-element">
         <label class="modal__form-field" for="phone_number"
-          ><span class="modal__form-label">Phone number</span>
+          ><span class="modal__form-label">Phone number</span></label
+        >
+        <div class="input-wrap">
           <input
             class="modal__input-modal"
             type="tel"
@@ -33,21 +43,35 @@
             minlength="13"
             maxlength="13"
           />
-        </label>
+          <span class="red-error">
+            <svg class="icon-frame" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-frame"></use>
+            </svg>
+            This phone must be in the format 099 000 00 00
+          </span>
+        </div>
       </div>
 
       <div class="modal__form-element">
-        <label class="modal__form-field" for="email"
-          ><span class="modal__form-label">E-mail</span>
+        <label class="modal__form-field" for="e-mail"
+          ><span class="modal__form-label">E-mail</span></label
+        >
+        <div class="input-wrap">
           <input
             class="modal__input-modal"
             type="email"
             name="email"
-            id="email"
+            id="e-mail"
             required
             placeholder="example@gmail.com"
           />
-        </label>
+          <span class="red-error">
+            <svg class="icon-frame" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-frame"></use>
+            </svg>
+            Please enter a valid email address
+          </span>
+        </div>
       </div>
       <button type="submit" class="modal__submit-btn">Send</button>
     </form>
