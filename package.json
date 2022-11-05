@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://petrov-tech.github.io/team-test-foodsta",
+  "homepage": "https://petrov-tech.github.io/team13-proj-foodsta",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-test-foodsta/"
+    "build": "parcel build src/*.html --public-url /team13-proj-foodsta/"
   },
   "repository": {
     "type": "git",
