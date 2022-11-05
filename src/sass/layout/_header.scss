@@ -3,14 +3,15 @@
     top: 0;  
     z-index: 100;  
     width: 100%;
-    background: #FEFEFE;  
+    background: var(--header-footer-bg);  
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    position: relative; 
 
     &__wrap {
 
@@ -26,7 +27,7 @@
 }
 
 .logo-header {
-    position: relative;
+    
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -41,8 +42,6 @@
 }
 
 .navigation_link {
-    position: relative;
-
     display: block;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -50,14 +49,16 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
-    color: #2C2C2C;
+    color: var(--title-color-text);
 
     text-decoration-line: none;
+
+    transition: color var(--animation-timing-function);
 
     &:hover,
     &:focus {
         text-decoration-line: underline;
-        color: #BBF330;
+        color: var(--button-color);
     }
 }
 
