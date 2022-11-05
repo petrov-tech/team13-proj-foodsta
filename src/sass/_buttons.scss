@@ -98,26 +98,7 @@
   }
 }
 
-.burger_menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 28px;
-  min-width: 28px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: var(--animation-timing-function);
-  @media (min-width: 768px) {
-    display: none;
-  }
 
-  &:hover,
-  &:focus {
-    fill: var(--maim-bg-color-and-border);
-  }
-}
 
 .hero__buttonOpenModal {
   
