@@ -3,28 +3,25 @@
     padding-top: 41px;
     
 
-    background: linear-gradient(to bottom, transparent 0%, transparent 90px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-m.svg) 50% 0 no-repeat;
+    background: linear-gradient(to bottom, transparent 0%, transparent 15%, var(--maim-bg-color-and-border) 13.5%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-m.svg) 50% 0 no-repeat;
     background-size: auto auto;
         
-    @include mobile-max {
-        max-width: $mobile;
-        
-    }
+   
     @include tablet {   
-        width: $mobile;
+        
         margin-top: -254px;
     }
     @include tablet {
         
-        background: linear-gradient(to bottom, transparent 0%, transparent 116px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        background: linear-gradient(to bottom, transparent 0%, transparent 185px, var(--maim-bg-color-and-border) 185px, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
         padding-top: 112px;
-        width: $tablet;
+        
     }
     @include pc {
-        background: linear-gradient(to bottom, transparent 0%, transparent 190px, var(--maim-bg-color-and-border) 8.2%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        background: linear-gradient(to bottom, transparent 0%, transparent 29%, var(--maim-bg-color-and-border) 29%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
         padding-top: 177px;
         padding-bottom: 43px;
-        width: $pc;
+        background-size: 100% ;
     }
 }
 
@@ -82,7 +79,7 @@
         margin-bottom: 50px;
         font-size: 16px;
         line-height: 1.19;
-        max-width: 500px;
+        
     }
 
     @include pc {
