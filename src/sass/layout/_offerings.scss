@@ -18,10 +18,10 @@
         
     }
     @include pc {
-        background: linear-gradient(to bottom, transparent 0%, transparent 29%, var(--maim-bg-color-and-border) 29%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-t.svg) 50% 0px no-repeat;
+        background: linear-gradient(to bottom, transparent 0%, transparent 29%, var(--maim-bg-color-and-border) 29%, var(--maim-bg-color-and-border) 100%), url(../images/offerings/offerings-bg-d.svg) 50% 0px no-repeat;
         padding-top: 177px;
         padding-bottom: 43px;
-        background-size: 100% ;
+        background-size: 100% 100%;
     }
 }
 
