@@ -3,14 +3,14 @@
 
   @mixin pc {
     padding: 6px 18px;
-      color: #2C2C2C;
-      background-color: #BBF330;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 1.54;
+    color: #2C2C2C;
+    background-color: #BBF330;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.54;
   }
 
   &:hover,
@@ -21,15 +21,15 @@
 
 .hero__button {
   padding: 6px 18px;
-    color: #2C2C2C;
-    background-color: #BBF330;
-    border-radius: 30px;
-    border: none;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  color: #2C2C2C;
+  background-color: #BBF330;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
 
-  
+
   &:hover,
   &:focus {
     background-color: #B5FF00;
@@ -40,16 +40,16 @@
 
 .offerings__button {
   padding: 10px 22px;
-    color: #2C2C2C;
-    background-color: #FFFFFF;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+  border: 2px solid #7EB101;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
 
- 
+
 
   &:hover,
   &:focus {
@@ -65,8 +65,8 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  font-size: 13px;
+  line-height: 1.54;
 
 
   &:hover,
@@ -84,7 +84,7 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 13px;
-    line-height: 1.54;
+  line-height: 1.54;
 
   &:hover,
   &:focus {
@@ -112,6 +112,7 @@
     fill: #FFE550;
   }
 }
+
 .buttonOpenModal {
 
   padding: 6px 18px;
@@ -158,3 +159,4 @@
     background: #BBF330;
   }
 }
+
