@@ -107,8 +107,10 @@
 
     &__item {
         &:first-child {
-            margin-bottom: 28px;     
-            
+                
+            @include mobile-max {
+                margin-bottom: 28px;
+            }
         }
         &:first-child::before {
             content: "";
