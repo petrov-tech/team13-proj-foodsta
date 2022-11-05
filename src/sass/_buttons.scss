@@ -1,35 +1,34 @@
-.header__button {
-  display: none;
-
-  @mixin pc {
-    padding: 6px 18px;
-      color: #2C2C2C;
-      background-color: #BBF330;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 1.54;
-  }
-
-  &:hover,
-  &:focus {
+.header__button {  
+  
+  padding: 6px 18px;
+  color: var(--title-color-text);
+  background-color: var(--button-color);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+    transition: var(--animation-timing-function);
+    &:hover,
+    &:focus {
     background-color: #B5FF00;
-  }
+    }
 }
+
+
 
 .hero__button {
   padding: 6px 18px;
-    color: #2C2C2C;
-    background-color: #BBF330;
-    border-radius: 30px;
-    border: none;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  color: var(--title-color-text);
+  background-color: var(--button-color);
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+  transition: var(--animation-timing-function);
 
-  
   &:hover,
   &:focus {
     background-color: #B5FF00;
@@ -40,16 +39,16 @@
 
 .offerings__button {
   padding: 10px 22px;
-    color: #2C2C2C;
-    background-color: #FFFFFF;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  color: var(--title-color-text);
+  background-color: #FFFFFF;
+  border: 2px solid var(--foter-text-color);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+  transition: var(--animation-timing-function);
 
- 
 
   &:hover,
   &:focus {
@@ -57,18 +56,24 @@
   }
 }
 
-.subscribe__button {
+.subscribe__btn {
   padding: 11px 22px;
-  color: #2C2C2C;
-  background-color: #BBF330;
+  color: var(--title-color-text);
+  background-color: var(--button-color);
   border-radius: 30px;
   border: none;
   cursor: pointer;
   font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
+  font-size: 13px;
+  line-height: 1.54;
+  transition: var(--animation-timing-function);
 
-
+  &:hover,
+  &:focus {
+    background-color: #B5FF00;
+  }
+}
+.subscribe__btn.subscribe__btn {
   &:hover,
   &:focus {
     background-color: #B5FF00;
@@ -77,18 +82,18 @@
 
 .footer__button {
   padding: 11px 22px;
-  color: #2C2C2C;
+  color: var(--title-color-text);
   background-color: #FFFFFF;
-  border: 0.854167px solid #7EB101;
+  border: 0.854167px solid var(--foter-text-color);
   border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
   font-size: 13px;
-    line-height: 1.54;
-
+  line-height: 1.54;
+  transition: var(--animation-timing-function);
   &:hover,
   &:focus {
-    background-color: #FFE550;
+    background-color: var(--maim-bg-color-and-border);
   }
 }
 
@@ -102,24 +107,17 @@
   cursor: pointer;
   border: none;
   outline: none;
-
+  transition: var(--animation-timing-function);
   @media (min-width: 768px) {
     display: none;
   }
 
   &:hover,
   &:focus {
-    fill: #FFE550;
+    fill: var(--maim-bg-color-and-border);
   }
 }
-.buttonOpenModal {
-
-  padding: 6px 18px;
-  color: #2C2C2C;
-  background-color: #BBF330;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
+.hero__buttonOpenModal {
   margin-left: 30px;
 
 
@@ -129,16 +127,22 @@
   }
 
 }
-
+.hero__buttonOpenModal.offerings__button {
+  &:hover,
+    &:focus {
+      background-color: #FFFFFF;
+      
+    }
+}
 
 .modal__submit-btn {
   padding: 10px 38px;
-  color: #2C2C2C;
+  color: var(--title-color-text);
   font-weight: 500;
   font-size: 13px;
   line-height: 1.54;
   background-color: #FFFFFF;
-  border: 2px solid #7EB101;
+  border: 2px solid var(--foter-text-color);
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -146,7 +150,7 @@
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-
+  transition: var(--animation-timing-function);
   cursor: pointer;
 
   &:hover,
@@ -155,6 +159,6 @@
   }
 
   &:active {
-    background: #BBF330;
+    background: var(--button-color);
   }
 }
