@@ -1,27 +1,14 @@
-@import './utils/varibles';
 @import './common';
-@import './utils/global';
-@import './example';
-@import './buttons';
 @import './utils/mixins';
-
-
+@import './utils/varibles';
+@import './utils/global';
+@import './buttons';
+@import './layout/header';
 @import './hero';
 @import './layout/offerings';
-@import "./modal-window";
+@import './layout/favorites';
 @import './customers';
 @import './layout/subscribe';
-
-@import './layout/header';
-
-
 @import './footer';
-
-
-@import './layout/header';
-
-@import './layout/favorites';
-// @import './layout/customers';
-
-
 @import './burger_menu';
+@import "./modal-window";
