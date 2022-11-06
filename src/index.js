@@ -1,3 +1,3 @@
 import "./modal";
-import "./slider"
+import "./hero-slider";
 import "./burger_menu";

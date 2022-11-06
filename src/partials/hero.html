@@ -16,33 +16,53 @@
       </button>
     </div>
     <div class="hero__slider">
-      <picture class="hero__img">
-        <source
-          srcset="
-            ./images/hero/tablet/foto1@1x.png 1x,
-            ./images/hero/tablet/foto1@2x.png 2x
-          "
-          media="(max-width: 1279px)"
-        />
-        <source
-          srcset="
-            ./images/hero/pc/foto1@1x.png 1x,
-            ./images/hero/pc/foto1@2x.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <img src="/src/images/hero/pc/foto1@1x.png" alt="foto1" />
-      </picture>
-      <button class="hero__slider_btn">
-        <svg class="hero__svg" width="17" height="29">
-          <use href="./images/symbol-defs.svg#icon-vector-left"></use>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slider-box">
+            <div class="slider-line">
+              <img
+                srcset="
+                  ./images/hero/tablet/foto1@1x.png  292w,
+                  ./images/hero/pc/foto1@1x.png      528w,
+                  ./images/hero/tablet/foto1@2x.png  584w,
+                  ./images/hero/pc/foto1@2x.png     1056w
+                "
+                sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px "
+                src="./images/hero/pc/foto1@1x.png"
+                alt="falafel"
+              />
+              <img
+                srcset="
+                  ./images/hero/tablet/foto2@1x.png  292w,
+                  ./images/hero/pc/foto2@1x.png      528w,
+                  ./images/hero/tablet/foto2@2x.png  584w,
+                  ./images/hero/pc/foto2@2x.png     1056w
+                "
+                sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px "
+                src="./images/hero/pc/foto2@1x.png"
+                alt="greek-salad"
+              />
+              <img
+                srcset="
+                  ./images/hero/tablet/foto3@1x.png  292w,
+                  ./images/hero/pc/foto3@1x.png      528w,
+                  ./images/hero/tablet/foto3@2x.png  584w,
+                  ./images/hero/pc/foto3@2x.png     1056w
+                "
+                sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px "
+                src="./images/hero/pc/foto3@1x.png"
+                alt="poached-egg"
+              />
+            </div>
+          </div>
+        </div>
+        <svg class="slider-prev" width="17" height="29">
+          <use href="/src/images/symbol-defs.svg#icon-vector-left"></use>
         </svg>
-      </button>
-      <button class="hero__slider_btn-right">
-        <svg class="hero__svg" width="17" height="29">
-          <use href="./images/symbol-defs.svg#icon-vector-right"></use>
+        <svg class="slider-next" width="17" height="29">
+          <use href="/src/images/symbol-defs.svg#icon-vector-right"></use>
         </svg>
-      </button>
+      </div>
     </div>
   </div>
 </section>
