@@ -69,10 +69,11 @@ justify-content: flex-end;
 
 .subscribe__input {
     padding: 12px 57px 12px 11px;
-    border: 0.854167px solid #FFE550;
-    outline: #ffe550;
+    border: 0.854167px solid var(--maim-bg-color-and-border);
+    outline: var(--maim-bg-color-and-border);
     border-radius: 30px;
     margin: 0 0 20px 0;
+    transition: var(--animation-timing-function);
     
     @media screen and (min-width: 480px){
         margin: 0 22px 0 0;
@@ -89,26 +90,26 @@ justify-content: flex-end;
 
         &:hover,
         &:focus {
-        border: 0.854167px solid #BBF345;
+        border: 0.854167px solid var(--link-activ-color);
         }
 }
 
 .subscribe__btn {
         padding: 11px 22px;
         color: #2C2C2C;
-        background-color: #BBF330;
+        background-color: var(--button-color);
         border: transparent;
         border-radius: 30px;
         cursor: pointer;
         font-weight: 500;
         font-size: 13px;
         line-height: 150%;
-        margin: 0;
+        transition: var(--animation-timing-function);
 
 
         
     &:hover,
     &:focus {
-        background-color: #FFE550;
+        background-color: #B5FF00;
         }
 }
