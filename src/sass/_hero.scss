@@ -89,124 +89,134 @@
 }
 
 .hero__slider {
-    position: relative;
-    margin-right: 14px;
-    border-radius: 50%;
-    width: auto;
-    height: auto;
-
-    @media screen and (min-width:768px) and (max-width:1279px) {
-        margin-top: auto;
-        margin-right: 8px;
-    }
-        @media screen and (max-width:767px) {
-            display: none;
-        }
-    
-        @media screen and (min-width:768px) {
-            margin-top: auto;
-            border: 14px solid #FFE550;
-        }
-    
-        @media screen and (min-width:1280px) {
-            border: 26px solid #FFE550;
-        }
-}
-
-.hero__img {
-    border-radius: 50%;
-
-    
-}
-
-
-.hero__slider_btn {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    top: 50%;
-    left: -16px;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-   
-    border: none;
-    border-radius: 10px;
-    background-color: #fefefe;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
     @media screen and (max-width:767px) {
-            display: none;
-        }
+        display: none;
+    }
 
-    @media screen and (min-width:768px) and (max-width:1279px)  {
-        width: 34px;
-        height: 28px;
-        left: -5px;
-        transform: translate(-50%, -50%);
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-top: auto;
+        width: 336px;
+        height: 320px;
     }
 
     @media screen and (min-width:1280px) {
-        width: 48px;
-            height: 40px;
-    }
-
-    &:hover,
-    &:focus {
-        fill: #7EB101;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        display: block;
+        width: 608px;
+        height: 580px;
     }
 }
 
-.hero__slider_btn-right {
+.slider {
+    border: 14px solid #FFE550;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 292px;
+    height: 292px;
+    display: block;
+    box-sizing: content-box;
+
+    @media screen and (min-width:1280px) {
+        border: 26px solid #FFE550;
+        width: 528px;
+        height: 528px;
+    }
+
+}
+
+.slider-line {
+    display: flex;
+    height: 292px;
+    width: 876px;
+    transition: all ease 1s;
+    background-color:#F5F5F5;
+    position: relative;
+    transform: translate(0px);
+
+    @media screen and (min-width:1280px) {
+        height: 528px;
+        width: 1584px;
+    }
+}
+
+
+.slider-prev,
+.slider-next {
+    width: 34px;
+    height: 28px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    top: 50%;
-    right: -40px;
-    transform: translate(0, -50%);
     cursor: pointer;
-    
-    border: none;
-    border-radius: 8px;
-    background-color: #fefefe;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
-    @media screen and (max-width:767px) {
-            display: none;
-        }
 
-    @media screen and (min-width:768px) and (max-width:1279px){
-        width: 34px;
-        height: 28px;
-        right: -22px;
-        transform: translate(0, -50%);
-
-    }
-    
     @media screen and (min-width:1280px) {
         width: 48px;
         height: 40px;
+        border-radius: 8px;
     }
-    
-    &:hover,
-        &:focus {
-            fill: #7EB101;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        }
 }
 
-.hero__svg {
-    @media screen and (min-width:768px){
-        width: 11px;
-            height: 20px;
+.slider-prev{
+    padding: 5px 18px 5px 13px;
+
+    @media screen and (max-width:1279px) {
+        padding: 4px 13px 4px 9px;
+    }
+}
+
+.slider-next {
+    padding: 5px 13px 5px 18px;
+
+    @media screen and (max-width:1279px) {
+        padding: 4px 9px 4px 13px;
+    }
+}
+
+.slider-prev {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.slider-next {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-prev:hover,
+.slider-next:hover,
+.slider-prev:focus,
+.slider-next:focus {
+    fill: #7EB101;
+}
+
+.slider-prev:active,
+.slider-next:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    fill: black;
+}
+
+.slider-container {
+
+    width: 336px;
+    height: 320px;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @media screen and (min-width:1280px) {
+        width: 598px;
+        height: 580px;
     }
 
-    @media screen and (min-width:1280px){
-        width: 17px;
-        height: 29px;
+    @media screen and (max-width:767px) {
+        display: none;
     }
 }
