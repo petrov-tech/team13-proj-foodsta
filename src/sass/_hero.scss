@@ -152,6 +152,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: fill var(--animation-timing-function);
 
 
     @media screen and (min-width:1280px) {
